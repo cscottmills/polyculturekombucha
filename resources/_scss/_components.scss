@@ -1,4 +1,107 @@
 // Components
 // ----------
 
+// Temporary styles
+// --------------------------------------------------------
+.container {
+	width: 100%;
+	max-width: 20em;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 6.18em 0.618em;
+	margin: 0 auto;
+	h2 {
+		font-weight: $regular;
+		margin-bottom: 0.618em;
+	}
+	p {
 
+	}
+	strong {
+		font-weight: $regular;
+		color: $blue;
+	}
+	.totem {
+		display: inline-block;
+		vertical-align: top;
+		width: 4em;
+		margin-bottom: 2em;
+		opacity: 0.8;
+	}
+	@include respond(500px) {
+		font-size: 1.125em;
+	}
+}
+
+// Forms
+// --------------------------
+form {
+	width: 100%;
+	max-width: 14.5em;
+	font-size: 0.833em;
+	padding-top: 0.4em;
+	margin: 0 auto;
+	.input {
+		margin-bottom: $verticalSpace;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	label {
+		display: block;
+		margin-bottom: 0.1em;
+	}
+	[type=text],
+	[type=email],
+	textarea {
+		display: block;
+		width: 100%;
+		font-family: $fontBody;
+		text-align: center;
+		background-color: transparentize($grayLighter, 0.7);
+		padding: 0 0.4em 0;
+		border: none;
+		transition: $duration background-color ease;
+		&:focus {
+			background-color: transparentize($grayLighter, 0.8);
+			outline: 0;
+		}
+	}
+	[type=text],
+	[type=email] {
+		height: $verticalSpace * 1.25;
+	}
+	textarea {
+		height: $verticalSpace * 5.25;
+		line-height: $baseLineHeight;
+		padding-top: 0.175em;
+		padding-bottom: 0.175em;
+		resize: none;
+	}
+	[type=submit] {
+		display: inline-block;
+		vertical-align: top;
+		font-family: $fontBody;
+		color: $grayDark;
+		background-color: transparent;
+		padding: 0;
+		border: 0;
+		&:focus {
+			color: $blue;
+			outline: none;
+		}
+	}
+	.response,
+	div.mce_inline_error {
+		font-size: 0.9em;
+		color: $grayLight;
+	}
+	.response {
+		background-color: $white;
+		padding: 0.4em;
+		margin-bottom: $verticalSpace;
+	}
+	div.mce_inline_error {
+		padding-top: 0.2em;
+	}
+}
