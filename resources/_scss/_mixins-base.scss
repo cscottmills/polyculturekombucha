@@ -1,0 +1,203 @@
+// Base mixins
+// -----------
+
+// Media queries
+// --------------------------------------------------------
+// Respond to viewport size
+// $size -> viewport size
+// $operator -> 'min' or 'max'
+// $aspect -> 'width' or 'height'
+// --------------------------
+@mixin respond($size, $operator: max, $aspect: width) {
+	@media all and (#{$operator}-#{$aspect}: $size) {
+		@content;
+	}
+}
+
+// Utilities
+// --------------------------------------------------------
+// Full bleed
+// $direction accepts 'up', 'down' or 'none';
+// NB using 'up' or 'down' causes the shadow to 
+// extend to the top or bottom of the viewport
+// Only use 'none' on relatively wide elements,
+// and set $width to the width of the element 
+// --------------------------
+@mixin full-bleed($color, $direction: none, $width: 400em) {
+	@if $direction == none {
+		box-shadow: -$width 0 0 0 $color, $width 0 0 0 $color, (-$width * 2) 0 0 0 $color, ($width * 2) 0 0 0 $color;
+	}
+	@if $direction == down {
+		box-shadow: 0 $width 0 $width $color;
+	} 
+	@if $direction == up {
+		box-shadow: 0 (-$width) 0 $width $color;
+	}
+	background-color: $color;
+}
+
+// Clearfix
+// $mode accepts 'light' or 'heavy'
+// 'light' is sufficient for clearing floats, while 'heavy' is required to prevent margin collapsing
+// --------------------------
+@mixin clearfix($mode: light) {
+	@if $mode == heavy {
+		&:before,
+		&:after {
+			content: " ";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	@else {
+		&:after {
+			content: " ";
+			display: block;
+			clear: both;
+		}
+	}
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+// Components
+// --------------------------------------------------------
+// Tripundra
+// ------
+// ------
+// ------
+// --------------------------
+@mixin tripundra($color, $weight, $width, $height) {
+  // Reset default <button> styles
+  background: transparent;
+  border: none;
+  padding: 0;
+  // Apply the sacred ash
+  display: block;
+  width: $width;
+  height: $height;
+  border-top: $weight solid $color;
+  border-bottom: $weight solid $color;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: $weight solid $color;
+    position: absolute;
+    top: (($height - ($weight * 2)) / 2 ) - ($weight / 2);
+    left: 0;
+  }
+}
+
+// Properties that require browser prefixes
+// --------------------------------------------------------
+// User selection
+// Prevents user from accidentally selecting text on click, helpful for labels
+// --------------------------
+@mixin no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;	
+}
+
+// Hyphenation
+// NB this doesn't work in Chrome
+// --------------------------
+@mixin hyphenate {
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+// Keyframes
+// --------------------------
+@mixin keyframes($name) {
+	@-webkit-keyframes $name {
+		@content;
+	}
+	@-moz-keyframes $name {
+		@content;
+	}
+	@-ms-keyframes $name {
+		@content;
+	}
+	@-o-keyframes $name {
+		@content;
+	}
+	@keyframes $name {
+		@content;
+	}
+}
+
+// Animation
+// --------------------------
+@mixin animation($properties) {
+	-webkit-animation: $properties;
+	-moz-animation: $properties;
+	-ms-animation: $properties;
+	-o-animation: $properties;
+	animation: $properties;
+}
+
+// Appearance
+// Possible values listed here:
+// http://css-tricks.com/almanac/properties/a/appearance/
+// Usually has to override styles in _normalize.scss, hence !important
+// --------------------------
+@mixin appearance($value) {
+	-webkit-appearance: $value !important;
+	-moz-appearance: $value !important;
+	appearance: $value !important;
+}
+
+// Selection background
+// --------------------------
+@mixin selection($color) {
+	::-moz-selection {
+		background: $color;
+		text-shadow: none;
+	}
+	::selection {
+		background: $color;
+		text-shadow: none;
+	}
+}
+
+// Placeholder text
+// --------------------------
+@mixin placeholder($color, $style: normal) {
+	@extend %thin-glyphs;
+	&::-webkit-input-placeholder {
+		color: $color;
+		font-style: $style;
+		@content;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	&:-moz-placeholder {
+		color: $color;
+		font-style: $style;
+		@content;
+		opacity: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		font-style: $style;
+		@content;
+		opacity: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	&:-ms-input-placeholder {  
+		color: $color;
+		font-style: $style;
+		@content;
+	}
+}
