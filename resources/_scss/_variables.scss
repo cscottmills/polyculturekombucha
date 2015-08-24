@@ -20,7 +20,7 @@ $lavenderLight: transparentize($lavender, 0.6);
 
 // Typography
 // --------------------------------------------------------
-$fontBody: "source-sans-pro", sans-serif;
+$fontBody: "Source Sans Pro", sans-serif;
 
 // $alpha: ;
 // $beta: ;
@@ -34,26 +34,23 @@ $fontBody: "source-sans-pro", sans-serif;
 // $kappa: ;
 // $lambda: ;
 
-// $thin: 200;
+// Used
+// 1em
+// 0.727em
+
 $regular: 400;
-// $medium: 600;
-// $bold: 700;
+$bold: 700;
 
 // Measurements
 // --------------------------------------------------------
-// $containerWidth: ∞;
+$containerWidth: 30em;
 
-$baseLineHeight: 1.65;
-$lessLineHeight: 1.3;
+$baseLineHeight: 1.591;
+$lessLineHeight: 1.364;
 
-$verticalSpace: 1.4em;
-$horizontalSpace: 1.4em;
-$shim: 1em;
-$diff: $verticalSpace - $shim;
+$verticalSpace: $baseLineHeight * 1em;
 
-// $durationFast: 0.1s;
-$duration: 0.2s;
-// $durationSlow: 0.4s;
+$duration: 0.05s;
 $timing: ease;
 
 // Responsive breakpoints

@@ -1,107 +1,103 @@
 // Components
 // ----------
 
-// Temporary styles
+// Global
 // --------------------------------------------------------
 .container {
-	width: 100%;
-	max-width: 20em;
-	font-size: 1.5em;
-	text-align: center;
-	padding: 6.18em 0.618em;
+	width: $containerWidth;
 	margin: 0 auto;
-	h2 {
-		font-weight: $regular;
-		margin-bottom: 0.618em;
-	}
-	p {
+}
 
+// Page header
+// --------------------------
+.page-header {
+	padding: ($verticalSpace * 2) 0;
+	margin-bottom: ($verticalSpace * 2);
+	border-bottom: 1px solid $blueLight;
+}
+
+.title {
+	font-size: 1em;
+	font-weight: $regular;
+	text-align: center;
+	margin-bottom: $verticalSpace;
+}
+
+.primary-nav {
+	ul {
+		display: flex;
+		justify-content: center;
 	}
-	strong {
-		font-weight: $regular;
-		color: $blue;
-	}
-	.totem {
-		display: inline-block;
-		vertical-align: top;
-		width: 4em;
-		margin-bottom: 2em;
-		opacity: 0.8;
-	}
-	@include respond(500px) {
-		font-size: 1.125em;
+	li + li {
+		margin-left: $verticalSpace;
 	}
 }
 
-// Forms
+// Page footer
 // --------------------------
-form {
-	width: 100%;
-	max-width: 14.5em;
-	font-size: 0.833em;
-	padding-top: 0.4em;
-	margin: 0 auto;
-	.input {
-		margin-bottom: $verticalSpace;
-		&:last-child {
-			margin-bottom: 0;
+.page-footer {
+	font-size: 0.727em;
+	font-weight: $bold;
+	color: $grayLighter;
+	padding: ($verticalSpace * 2) 0;
+	margin-bottom: ($verticalSpace * 2);
+	border-top: 1px solid $blueLight;
+}
+
+.tagline {
+	text-align: center;
+}
+
+.footer-nav {
+	ul {
+		display: flex;
+		justify-content: center;
+	}
+	li + li {
+		margin-left: $verticalSpace;
+	}
+}
+
+// Page content
+// --------------------------
+.page-content {
+	margin-bottom: ($verticalSpace * 2);
+}
+
+// Content components
+// --------------------------------------------------------
+// Content figure
+// --------------------------
+// figure
+.content-figure {
+	$width: 18.54em;
+	$overhang: (($containerWidth - $width) / 2);
+	margin-bottom: $verticalSpace;
+	&.wide {
+		width: auto;
+		margin-right: -$overhang;
+		margin-left: -$overhang;
+		figcaption {
+			padding-right: $overhang;
+			padding-left: $overhang;
 		}
 	}
-	label {
-		display: block;
-		margin-bottom: 0.1em;
+	&.narrow {
+		width: $width;
+		margin-right: auto;
+		margin-left: auto;
 	}
-	[type=text],
-	[type=email],
-	textarea {
+	img {
 		display: block;
 		width: 100%;
-		font-family: $fontBody;
-		text-align: center;
-		background-color: transparentize($grayLighter, 0.7);
-		padding: 0 0.4em 0;
-		border: none;
-		transition: $duration background-color ease;
-		&:focus {
-			background-color: transparentize($grayLighter, 0.8);
-			outline: 0;
+	}
+	figcaption {
+		padding-top: 0.4em;
+		p {
+			font-size: 0.727em;
+			font-weight: 700;
+			color: $grayLighter;
+			line-height: $lessLineHeight;
 		}
-	}
-	[type=text],
-	[type=email] {
-		height: $verticalSpace * 1.25;
-	}
-	textarea {
-		height: $verticalSpace * 5.25;
-		line-height: $baseLineHeight;
-		padding-top: 0.175em;
-		padding-bottom: 0.175em;
-		resize: none;
-	}
-	[type=submit] {
-		display: inline-block;
-		vertical-align: top;
-		font-family: $fontBody;
-		color: $grayDark;
-		background-color: transparent;
-		padding: 0;
-		border: 0;
-		&:focus {
-			color: $blue;
-			outline: none;
-		}
-	}
-	.response,
-	div.mce_inline_error {
-		font-size: 0.9em;
-		color: $grayLight;
-	}
-	.response {
-		background-color: $white;
-		padding: 0.4em;
-		margin-bottom: $verticalSpace;
-	}
-	div.mce_inline_error {
-		padding-top: 0.2em;
 	}
 }
