@@ -23,7 +23,7 @@
       {{ content }}
     </main>
     <footer class="page-footer">
-      <p class="tagline">This is our tagline.</p>
+      <p>This is our tagline.</p>
       <nav class="footer-nav">
         <ul>
           {% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}

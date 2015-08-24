@@ -42,13 +42,13 @@
 	padding: ($verticalSpace * 2) 0;
 	margin-bottom: ($verticalSpace * 2);
 	border-top: 1px solid $blueLight;
-}
-
-.tagline {
-	text-align: center;
+	p {
+		text-align: center;
+	}
 }
 
 .footer-nav {
+	margin-bottom: $verticalSpace;
 	ul {
 		display: flex;
 		justify-content: center;
