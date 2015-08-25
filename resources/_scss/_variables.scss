@@ -22,28 +22,22 @@ $lavenderLight: transparentize($lavender, 0.6);
 // --------------------------------------------------------
 $fontBody: "Source Sans Pro", sans-serif;
 
-// $alpha: ;
-// $beta: ;
-// $gamma: ;
-// $delta: ;
-// $epsilon: ;
-// $zeta: ;
-// $eta: ;
-// $theta: ;
-// $iota: ;
-// $kappa: ;
-// $lambda: ;
-
-// Used
-// 1em
-// 0.727em
+// 30px
+$alpha: 1.364em;
+// 26px
+$beta: 1.182em;
+$gamma: 1em;
+// 16px
+$delta: 0.727em;
 
 $regular: 400;
 $bold: 700;
 
 // Measurements
 // --------------------------------------------------------
-$containerWidth: 30em;
+$containerWidth: 60em; 
+$contentWidth: 30em;
+$figureWidth: 18.54em;
 
 $baseLineHeight: 1.591;
 $lessLineHeight: 1.364;
@@ -56,10 +50,11 @@ $timing: ease;
 // Responsive breakpoints
 // https://en.wikipedia.org/wiki/List_of_lakes_by_area
 // --------------------------------------------------------
-// $superior: ;
+// 1320px
+$superior: (($containerWidth / 1em) * 22px);
 // $victoria: ;
 // $huron: ;
-// $michigan: ;
+$michigan: (($contentWidth / 1em) * 22px);
 // $baikal: ;
 // $malawi: ;
 // $erie: ;

@@ -12,16 +12,14 @@
 <body>
   <div class="container">
     <header class="page-header">
-      <h1 class="title"><a href="/">{{ site.title }}</a></h1>
+      <h1 class="page-title"><a href="/">{{ site.title }}</a></h1>
       <nav class="primary-nav">
         <ul>
           {% assign items = "about flavors buy blog" | split: ' ' %}{% capture branch %}{{ page.url }}{% endcapture %}{% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}
         </ul>
       </nav>
     </header>
-    <main class="page-content">
-      {{ content }}
-    </main>
+    {{ content }}
     <footer class="page-footer">
       <p>This is our tagline.</p>
       <nav class="footer-nav">

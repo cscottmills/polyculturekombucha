@@ -41,38 +41,29 @@ body {
 // Block-level elements
 // --------------------------
 %proto-heading {
-	// line-height: 1;
 	margin: 0;
 }
 
-h1 {
-	@extend %proto-heading;
-	// font-size: $alpha;
-}
-
+h1,
 h2 {
 	@extend %proto-heading;
-	// font-size: $beta;
+	font-size: $alpha;
 }
 
 h3 {
 	@extend %proto-heading;
-	// font-size: $gamma;
+	font-size: $beta;
 }
 
 h4 {
 	@extend %proto-heading;
-	// font-size: $delta;
+	font-size: $gamma;
 }
 
-h5 {
-	@extend %proto-heading;
-	// font-size: $epsilon;
-}
-
+h5,
 h6 {
 	@extend %proto-heading;
-	// font-size: $zeta;
+	font-size: $delta;
 }
 
 p {
@@ -81,7 +72,6 @@ p {
 
 ul, 
 ol {
-	// Base list styles
 	nav & {
 		list-style-type: none;
 		padding-left: 0;

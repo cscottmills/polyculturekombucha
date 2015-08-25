@@ -4,21 +4,22 @@
 // Global
 // --------------------------------------------------------
 .container {
-	width: $containerWidth;
+	width: 100%;
+	max-width: $containerWidth;
 	margin: 0 auto;
 }
 
 // Page header
 // --------------------------
 .page-header {
+	// background-color: $offWhite;
 	padding: ($verticalSpace * 2) 0;
-	margin-bottom: ($verticalSpace * 2);
-	border-bottom: 1px solid $blueLight;
+	// margin-bottom: ($verticalSpace * 2);
+	// border-bottom: 1px solid $blueLight;
 }
 
-.title {
+.page-title {
 	font-size: 1em;
-	font-weight: $regular;
 	text-align: center;
 	margin-bottom: $verticalSpace;
 }
@@ -36,19 +37,20 @@
 // Page footer
 // --------------------------
 .page-footer {
-	font-size: 0.727em;
+	font-size: $delta;
 	font-weight: $bold;
 	color: $grayLighter;
-	padding: ($verticalSpace * 2) 0;
-	margin-bottom: ($verticalSpace * 2);
-	border-top: 1px solid $blueLight;
+	background-color: $offWhite;
+	padding: ($verticalSpace * 2) 0 ($verticalSpace * 4);
+	// margin-bottom: ($verticalSpace * 2);
+	// border-top: 1px solid $blueLight;
 	p {
 		text-align: center;
 	}
 }
 
 .footer-nav {
-	margin-bottom: $verticalSpace;
+	// margin-bottom: $verticalSpace;
 	ul {
 		display: flex;
 		justify-content: center;
@@ -61,17 +63,84 @@
 // Page content
 // --------------------------
 .page-content {
-	margin-bottom: ($verticalSpace * 2);
+	width: 100%;
+	max-width: $contentWidth;
+	padding-top: ($verticalSpace * 2);
+	margin: 0 auto ($verticalSpace * 2);
 }
 
 // Content components
 // --------------------------------------------------------
+// Homepage components
+// --------------------------
+// figure
+.homepage-figure {
+	margin-bottom: ($verticalSpace * 2);
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+
+.homepage-lead {
+	margin-bottom: ($verticalSpace * 2);
+	p {
+		width: 100%;
+		max-width: ($contentWidth / ($beta / 1em));
+		font-size: $beta;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+// Interior figure
+// --------------------------
+// figure
+.interior-figure {
+	height: $verticalSpace;
+	// NB background-image is set inline
+	background-size: cover;
+	background-position: 0 38%;
+}
+
+// Post
+// --------------------------
+.post {
+	margin-bottom: ($verticalSpace * 2);	
+	& + & {
+		padding-top: ($verticalSpace * 2);
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			width: $figureWidth;
+			border-top: 1px solid $blueLight;
+			position: absolute;
+			top: 0;
+			left: calc(50% - (#{$figureWidth} / 2));
+		}
+	}
+}
+
+.post--header {
+	margin-bottom: $verticalSpace;
+	.title {
+		font-size: $alpha;
+		line-height: 1em;
+		// padding-top: 0.3em;
+	}
+	.byline {
+		font-size: $delta;
+		color: $grayLighter;
+		padding: 0.25em 0;
+	}
+}
+
 // Content figure
 // --------------------------
 // figure
 .content-figure {
-	$width: 18.54em;
-	$overhang: (($containerWidth - $width) / 2);
+	$overhang: (($contentWidth - $figureWidth) / 2);
 	margin-bottom: $verticalSpace;
 	&.wide {
 		width: auto;
@@ -83,7 +152,7 @@
 		}
 	}
 	&.narrow {
-		width: $width;
+		width: $figureWidth;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -94,7 +163,7 @@
 	figcaption {
 		padding-top: 0.4em;
 		p {
-			font-size: 0.727em;
+			font-size: $delta;
 			font-weight: 700;
 			color: $grayLighter;
 			line-height: $lessLineHeight;
