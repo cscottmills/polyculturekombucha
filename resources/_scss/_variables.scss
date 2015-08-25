@@ -52,12 +52,12 @@ $timing: ease;
 // Responsive breakpoints
 // https://en.wikipedia.org/wiki/List_of_lakes_by_area
 // --------------------------------------------------------
-// 1320px
-$superior: (($contentWidth / 1em) * 22px);
+// $superior: ;
 // $victoria: ;
-// $huron: ;
-$michigan: (($contentWidth / 1em) * 22px);
-// $baikal: ;
+$huron: 913px;
+// $michigan: ;
+// 660px
+$baikal: ($contentWidth / 1em) * 22px;
 // $malawi: ;
 // $erie: ;
 // $winnipeg: ;
@@ -66,3 +66,4 @@ $michigan: (($contentWidth / 1em) * 22px);
 // $ladoga: ;
 // $vostok: ;
 // $onega: ;
+

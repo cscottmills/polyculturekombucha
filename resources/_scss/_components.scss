@@ -173,4 +173,26 @@
 			line-height: $lessLineHeight;
 		}
 	}
+	// TODO get this working
+	// @include respond($huron) {
+	// 	&.wide {
+	// 		$overhang: calc((100vw - #{$contentWidth}) / 2);
+	// 		margin-right: -$overhang;
+	// 		margin-left: -$overhang;
+	// 		figcaption {
+	// 			padding-right: $overhang;
+	// 			padding-left: $overhang;
+	// 		}
+	// 	}
+	// }
+	@include respond($baikal) {
+		&.wide {
+			margin-right: 0;
+			margin-left: 0;
+			figcaption {
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+	}
 }
