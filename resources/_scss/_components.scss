@@ -12,10 +12,7 @@
 // Page header
 // --------------------------
 .page-header {
-	// background-color: $offWhite;
 	padding: ($verticalSpace * 2) 0;
-	// margin-bottom: ($verticalSpace * 2);
-	// border-bottom: 1px solid $blueLight;
 }
 
 .page-title {
@@ -38,19 +35,17 @@
 // --------------------------
 .page-footer {
 	font-size: $delta;
-	font-weight: $bold;
-	color: $grayLighter;
+	font-weight: $medium;
+	color: $grayLight;
 	background-color: $offWhite;
-	padding: ($verticalSpace * 2) 0 ($verticalSpace * 4);
-	// margin-bottom: ($verticalSpace * 2);
-	// border-top: 1px solid $blueLight;
+	padding: ($verticalSpace * 2) 0 ($verticalSpace * 2);
 	p {
 		text-align: center;
 	}
 }
 
 .footer-nav {
-	// margin-bottom: $verticalSpace;
+	margin-bottom: $verticalSpace;
 	ul {
 		display: flex;
 		justify-content: center;
@@ -58,6 +53,14 @@
 	li + li {
 		margin-left: $verticalSpace;
 	}
+}
+
+.totem {
+	display: inline-block;
+	vertical-align: top;
+	width: 1.875em;
+	padding-top: 0.4em;
+	opacity: 0.6;
 }
 
 // Page content
@@ -100,7 +103,7 @@
 	height: $verticalSpace;
 	// NB background-image is set inline
 	background-size: cover;
-	background-position: 0 38%;
+	background-position: 50% 0;
 }
 
 // Post
@@ -114,10 +117,11 @@
 			content: "";
 			display: block;
 			width: $figureWidth;
-			border-top: 1px solid $blueLight;
+			border-top: $lineThickness solid $blueLight;
 			position: absolute;
 			top: 0;
 			left: calc(50% - (#{$figureWidth} / 2));
+			// TODO calc fallback
 		}
 	}
 }
@@ -127,11 +131,11 @@
 	.title {
 		font-size: $alpha;
 		line-height: 1em;
-		// padding-top: 0.3em;
 	}
 	.byline {
 		font-size: $delta;
-		color: $grayLighter;
+		font-weight: $medium;
+		color: $grayLight;
 		padding: 0.25em 0;
 	}
 }
@@ -164,8 +168,8 @@
 		padding-top: 0.4em;
 		p {
 			font-size: $delta;
-			font-weight: 700;
-			color: $grayLighter;
+			font-weight: $medium;
+			color: $grayLight;
 			line-height: $lessLineHeight;
 		}
 	}
