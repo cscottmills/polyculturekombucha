@@ -3,6 +3,8 @@
 
 // Colors
 // --------------------------------------------------------
+$opacity: 0.7;
+
 $white: #fff;
 $offWhite: #f2f2f0;
 $grayLighter: #b8b4a7;
@@ -14,9 +16,9 @@ $blue: #0cacff;
 $orange: #ff7800;
 $lavender: #b680ff;
 
-$blueLight: transparentize($blue, 0.5);
-$orangeLight: transparentize($orange, 0.5);
-$lavenderLight: transparentize($lavender, 0.5);
+$blueLight: transparentize($blue, (1 - $opacity));
+$orangeLight: transparentize($orange, (1 - $opacity));
+$lavenderLight: transparentize($lavender, (1 - $opacity));
 
 // Typography
 // --------------------------------------------------------
