@@ -70,6 +70,9 @@
 	max-width: $contentWidth;
 	padding-top: ($verticalSpace * 2);
 	margin: 0 auto ($verticalSpace * 2);
+	.full & {
+		max-width: 100%;
+	}
 }
 
 // Content components
@@ -195,4 +198,25 @@
 			}
 		}
 	}
+}
+
+// Triptych
+// --------------------------
+.triptych {
+	$space: 1em;
+	display: flex;
+	justify-content: space-between;
+	.third {
+		width: calc(33.333% - ((#{$space} * 2) / 3));
+		text-align: center;
+	}
+	.title {
+		// TODO find better way to preserve squareness
+		line-height: 1;
+		background-size: cover;
+		padding: calc(50% - 0.5em) 0;
+		margin-bottom: 0.5em;
+	}
+	// TODO flex & calc fallback
+	// TODO responsive styles
 }

@@ -13,12 +13,12 @@ $gray: #7d7d79;
 $grayDark: #474745;
 
 $blue: #0cacff;
-$orange: #ff7800;
-$lavender: #b680ff;
+$yellow: #ffd65b;
+$green: #a2fa61;
 
 $blueLight: transparentize($blue, (1 - $opacity));
-$orangeLight: transparentize($orange, (1 - $opacity));
-$lavenderLight: transparentize($lavender, (1 - $opacity));
+$yellowLight: transparentize($yellow, (1 - $opacity));
+$greenLight: transparentize($green, (1 - $opacity));
 
 // Typography
 // --------------------------------------------------------
