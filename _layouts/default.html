@@ -12,7 +12,7 @@
 <body {% if page.variant %}class="{{ page.variant }}"{% endif %}>
   <div class="container">
     <header class="page-header">
-      <h1 class="page-title"><a href="/">{{ site.title }}</a></h1>
+      <a class="logo" href="/"><img src="{{ site.imagePath }}/logo.png" alt="{{ site.title }}"></a>
       <nav class="primary-nav">
         <ul>
           {% assign items = "about flavors buy blog" | split: ' ' %}{% capture branch %}{{ page.url }}{% endcapture %}{% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}

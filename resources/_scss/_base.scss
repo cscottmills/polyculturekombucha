@@ -29,6 +29,7 @@ html {
 }
 
 body {
+	min-width: 320px;
 	font-family: $fontBody;
 	// 22px
 	font-size: 1.375em;

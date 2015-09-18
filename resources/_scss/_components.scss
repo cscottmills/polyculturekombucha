@@ -15,20 +15,30 @@
 	padding: ($verticalSpace * 2) 0;
 }
 
-.page-title {
-	font-size: 1em;
-	text-align: center;
-	margin-bottom: $verticalSpace;
+// a
+.logo {
+	display: block;
+	width: 100%;
+	max-width: 15em;
+	margin: 0 auto $verticalSpace;
+	box-shadow: none;
+	opacity: $opacity;
+	img {
+		display: block;
+		width: 100%;
+	}
 }
 
 .primary-nav {
 	ul {
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
 	}
-	li + li {
-		margin-left: $verticalSpace;
+	li {
+		margin: 0 ($verticalSpace / 2);
 	}
+	// TODO flex fallback
 }
 
 // Page footer
@@ -159,7 +169,8 @@
 		}
 	}
 	&.narrow {
-		width: $figureWidth;
+		width: 100%;
+		max-width: $figureWidth;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -176,18 +187,16 @@
 			line-height: $lessLineHeight;
 		}
 	}
-	// TODO get this working
-	// @include respond($huron) {
-	// 	&.wide {
-	// 		$overhang: calc((100vw - #{$contentWidth}) / 2);
-	// 		margin-right: -$overhang;
-	// 		margin-left: -$overhang;
-	// 		figcaption {
-	// 			padding-right: $overhang;
-	// 			padding-left: $overhang;
-	// 		}
-	// 	}
-	// }
+	@include respond($huron) {
+		&.wide {
+			margin-right: calc((100vw - #{$contentWidth}) / -2);
+			margin-left: calc((100vw - #{$contentWidth}) / -2);
+			figcaption {
+				padding-right: calc((100vw - #{$contentWidth}) / 2);
+				padding-left: calc((100vw - #{$contentWidth}) / 2);
+			}
+		}
+	}
 	@include respond($baikal) {
 		&.wide {
 			margin-right: 0;
@@ -211,11 +220,23 @@
 		text-align: center;
 	}
 	.title {
-		// TODO find better way to preserve squareness
+		width: 100%;
 		line-height: 1;
 		background-size: cover;
-		padding: calc(50% - 0.5em) 0;
+		padding-bottom: 100%;
 		margin-bottom: 0.5em;
+		position: relative;
+	}
+	b {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 1em;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 	}
 	// TODO flex & calc fallback
 	// TODO responsive styles
