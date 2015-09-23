@@ -220,12 +220,24 @@
 		text-align: center;
 	}
 	.title {
+		$shadowOpacity: 0.5;
+		$shadowBlur: 0.2em;
 		width: 100%;
+		color: $white;
 		line-height: 1;
 		background-size: cover;
 		padding-bottom: 100%;
 		margin-bottom: 0.5em;
 		position: relative;
+		&.blue {
+			text-shadow: 0 0 $shadowBlur transparentize($blue, $shadowOpacity);
+		}
+		&.orange {
+			text-shadow: 0 0 $shadowBlur transparentize($orange, $shadowOpacity);
+		}
+		&.green {
+			text-shadow: 0 0 $shadowBlur transparentize($green, $shadowOpacity);
+		}
 	}
 	b {
 		display: flex;
