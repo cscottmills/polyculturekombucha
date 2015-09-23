@@ -10,14 +10,20 @@ $offWhite: #f2f2f0;
 $grayLighter: #b8b4a7;
 $grayLight: #9e9b90;
 $gray: #7d7d79;
-$grayDark: #474745;
+$grayDark: #272522;
 
-$blue: #0cacff;
-$yellow: #ffd65b;
-$green: #a2fa61;
+// Mellow
+// $blue: #75b3c5;
+// $orange: #f19d71;
+// $green: #a2bb83;
+
+// Bold
+$blue: #4f9b9f;
+$orange: #dc7154;
+$green: #6ab373;
 
 $blueLight: transparentize($blue, (1 - $opacity));
-$yellowLight: transparentize($yellow, (1 - $opacity));
+$orangeLight: transparentize($orange, (1 - $opacity));
 $greenLight: transparentize($green, (1 - $opacity));
 
 // Typography
