@@ -10,7 +10,7 @@
 
 // Set text selection background color
 // TODO set this once we have colors
-// @include selection($orangeLight);
+@include selection(transparentize($blue, 0.6));
 
 // Global
 // --------------------------------------------------------

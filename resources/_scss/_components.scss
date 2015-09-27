@@ -142,7 +142,8 @@
 .post--header {
 	margin-bottom: $verticalSpace;
 	.title {
-		font-size: $alpha;
+		@include beta;
+		// font-size: $alpha;
 		line-height: 1em;
 	}
 	.byline {
@@ -215,18 +216,20 @@
 	$space: 1em;
 	display: flex;
 	justify-content: space-between;
+	padding: 0 $space;
 	.third {
 		width: calc(33.333% - ((#{$space} * 2) / 3));
 		text-align: center;
 	}
 	.title {
-		$shadowOpacity: 0.5;
+		$shadowOpacity: 0.4;
 		$shadowBlur: 0.2em;
+		@include beta;
 		width: 100%;
 		color: $white;
-		line-height: 1;
+		line-height: 1.2;
 		background-size: cover;
-		padding-bottom: 100%;
+		padding-bottom: 61.8%;
 		margin-bottom: 0.5em;
 		position: relative;
 		&.blue {
@@ -249,6 +252,9 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
+	}
+	p {
+		padding: 0 ($space / 2);
 	}
 	// TODO flex & calc fallback
 	// TODO responsive styles

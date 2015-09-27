@@ -159,12 +159,12 @@
 // --------------------------
 @mixin selection($color) {
 	::-moz-selection {
-		background: $color;
 		text-shadow: none;
+		background: $color;
 	}
 	::selection {
-		background: $color;
 		text-shadow: none;
+		background: $color;
 	}
 }
 

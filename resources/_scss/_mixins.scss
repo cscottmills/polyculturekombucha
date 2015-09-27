@@ -1,5 +1,12 @@
 // Project specific mixins
 // -----------------------
+
+@mixin beta {
+	font-family: $fontHead;
+	font-size: $beta;
+	letter-spacing: 0.03em;	
+}
+
 // @mixin wide-bleed {
 // 	$wideMargin: (($containerWidth - $contentWidth) / -2);
 // 	$fullMargin: calc((100vw - #{$contentWidth}) / -2);
