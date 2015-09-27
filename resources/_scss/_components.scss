@@ -6,6 +6,7 @@
 .container {
 	width: 100%;
 	max-width: $containerWidth;
+	padding: 0 1em;
 	margin: 0 auto;
 }
 
@@ -113,7 +114,8 @@
 // --------------------------
 // figure
 .interior-figure {
-	height: $verticalSpace;
+	// height: $verticalSpace;
+	height: $lineThickness * 2;
 	// NB background-image is set inline
 	background-size: cover;
 	background-position: 50% 0;
@@ -216,7 +218,7 @@
 	$space: 1em;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 $space;
+	// padding: 0 $space;
 	.third {
 		width: calc(33.333% - ((#{$space} * 2) / 3));
 		text-align: center;
