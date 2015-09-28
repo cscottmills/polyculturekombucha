@@ -218,21 +218,25 @@
 	}
 }
 
-// Triptych
+// Panels
 // --------------------------
-.triptych {
+.panels {
 	$space: 1em;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	.third {
 		width: calc(33.333% - ((#{$space} * 2) / 3));
 		text-align: center;
+		& + .third {
+			margin-left: $space;
+		}
 	}
 	.title {
 		@include beta;
 		width: 100%;
 		color: $white;
 		line-height: 1.2;
+		background-position: 0 50%;
 		background-size: cover;
 		padding-bottom: 61.8%;
 		margin-bottom: 0.5em;
@@ -245,6 +249,9 @@
 		}
 		&.green {
 			text-shadow: 0 0 $shadowBlur transparentize($green, $shadowOpacity);
+		}
+		&.gray {
+			text-shadow: 0 0 $shadowBlur transparentize($grayLighter, $shadowOpacity);
 		}
 	}
 	b {
