@@ -81,8 +81,11 @@ ol {
 }
 
 hr {
+	width: 100%;
+	max-width: $figureWidth;
 	border: 0;
-	margin: 0;
+	border-top: $lineThickness solid $blueLight;
+	margin: $verticalSpace auto ($verticalSpace * 2);
 }
 
 input,

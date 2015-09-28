@@ -91,6 +91,9 @@
 	@include constrained;
 	height: $lineThickness * 2;
 	background-color: $offWhite;
+	border: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 // Content components
@@ -142,6 +145,11 @@
 	}
 	.full & {
 		@include constrained;
+	}
+	&.green {
+		strong {
+			color: $green;
+		}
 	}
 	// TODO calc fallback
 }
@@ -242,16 +250,26 @@
 		margin-bottom: 0.5em;
 		position: relative;
 		&.blue {
+			background-image: url('../images/blue.jpg');
 			text-shadow: 0 0 $shadowBlur transparentize($blue, $shadowOpacity);
 		}
 		&.orange {
+			background-image: url('../images/orange.jpg');
 			text-shadow: 0 0 $shadowBlur transparentize($orange, $shadowOpacity);
 		}
 		&.green {
+			background-image: url('../images/green.jpg');
 			text-shadow: 0 0 $shadowBlur transparentize($green, $shadowOpacity);
 		}
-		&.gray {
+		&.gray,
+		&.gray-alt {
 			text-shadow: 0 0 $shadowBlur transparentize($grayLighter, $shadowOpacity);
+		}
+		&.gray {
+			background-image: url('../images/grass.jpg');
+		}
+		&.gray-alt {
+			background-image: url('../images/goldenrod.jpg');
 		}
 	}
 	b {
