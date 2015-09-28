@@ -82,11 +82,7 @@ ol {
 }
 
 hr {
-	// display: block;
-	// border: 0;
-	// border-top: 1px solid $black;
-	// margin: 0;
-	// padding: 0;
+	border: 0;
 }
 
 input,
@@ -117,6 +113,9 @@ a,
 	&:focus {
 		outline: 0;
 	}
+	// nav & {
+	// 	box-shadow: none;
+	// }
 }
 
 b,

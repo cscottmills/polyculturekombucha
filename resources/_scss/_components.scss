@@ -23,10 +23,10 @@
 	max-width: 15em;
 	margin: 0 auto $verticalSpace;
 	box-shadow: none;
-	opacity: $opacity;
 	img {
 		display: block;
 		width: 100%;
+		image-rendering: optimizeQuality;
 	}
 }
 
@@ -49,6 +49,7 @@
 	font-weight: $medium;
 	color: $grayLight;
 	background-color: $offWhite;
+	background-size: cover;
 	padding: ($verticalSpace * 2) 0 ($verticalSpace * 2);
 	p {
 		text-align: center;
@@ -86,10 +87,25 @@
 	}
 }
 
+// hr
+.interior-line {
+	width: 100%;
+	max-width: $contentWidth;
+	height: $lineThickness * 2;
+	background-color: $offWhite;
+	margin: 0 auto;
+}
+
 // Content components
 // --------------------------------------------------------
 // Homepage components
 // --------------------------
+.homepage-content {
+	width: 100%;
+	max-width: $homeWidth;
+	margin: 0 auto;	
+}
+
 // figure
 .homepage-figure {
 	margin-bottom: ($verticalSpace * 2);
@@ -110,17 +126,6 @@
 	}
 }
 
-// Interior figure
-// --------------------------
-// figure
-.interior-figure {
-	// height: $verticalSpace;
-	height: $lineThickness * 2;
-	// NB background-image is set inline
-	background-size: cover;
-	background-position: 50% 0;
-}
-
 // Post
 // --------------------------
 .post {
@@ -134,7 +139,7 @@
 			width: $figureWidth;
 			border-top: $lineThickness solid $blueLight;
 			position: absolute;
-			top: 0;
+			top: ($lineThickness / -2);
 			left: calc(50% - (#{$figureWidth} / 2));
 			// TODO calc fallback
 		}
@@ -145,7 +150,6 @@
 	margin-bottom: $verticalSpace;
 	.title {
 		@include beta;
-		// font-size: $alpha;
 		line-height: 1em;
 	}
 	.byline {
@@ -224,24 +228,26 @@
 		text-align: center;
 	}
 	.title {
-		$shadowOpacity: 0.4;
-		$shadowBlur: 0.2em;
 		@include beta;
 		width: 100%;
 		color: $white;
 		line-height: 1.2;
+		// background-image: none !important;
 		background-size: cover;
 		padding-bottom: 61.8%;
 		margin-bottom: 0.5em;
 		position: relative;
 		&.blue {
 			text-shadow: 0 0 $shadowBlur transparentize($blue, $shadowOpacity);
+			// background-color: $blue;
 		}
 		&.orange {
 			text-shadow: 0 0 $shadowBlur transparentize($orange, $shadowOpacity);
+			// background-color: $orange;
 		}
 		&.green {
 			text-shadow: 0 0 $shadowBlur transparentize($green, $shadowOpacity);
+			// background-color: $green;
 		}
 	}
 	b {

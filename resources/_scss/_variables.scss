@@ -29,6 +29,7 @@ $fontHead: "league-spartan", sans-serif;
 $alpha: 1.364em;
 // 26px
 $beta: 1.182em;
+// 22px
 $gamma: 1em;
 // 16px
 $delta: 0.727em;
@@ -39,9 +40,10 @@ $bold: 700;
 
 // Measurements
 // --------------------------------------------------------
-$containerWidth: 60em; 
+$containerWidth: 62em; 
 $contentWidth: 30em;
 $figureWidth: 18.54em;
+$homeWidth: ($contentWidth + ($contentWidth - $figureWidth));
 $lineThickness: 0.136em;
 
 $baseLineHeight: 1.591;
@@ -51,6 +53,8 @@ $verticalSpace: $baseLineHeight * 1em;
 
 $duration: 0.06s;
 $timing: ease;
+$shadowOpacity: 0.6;
+$shadowBlur: 0.2em;
 
 // Responsive breakpoints
 // https://en.wikipedia.org/wiki/List_of_lakes_by_area
