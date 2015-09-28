@@ -1,14 +1,11 @@
 ---
 layout: interior
 title: Blog
-image: pebbles2
 ---
 
 {% for post in site.posts %}<article class="post">
-	<header class="post--header">
-		<h2 class="title">{{ post.title }}</h2>
-		<h3 class="byline">By {{ post.author }} &mdash; {{ post.date | date: "%B %d, %Y" }}</h3>
-	</header>
+	<h2 class="post--title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<h3 class="post--byline">By {{ post.author }} &mdash; {{ post.date | date: "%B %d, %Y" }}</h3>
 	{{ post.content }}
 </article>
 {% endfor %}

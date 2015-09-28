@@ -7,6 +7,13 @@
 	letter-spacing: 0.03em;	
 }
 
+@mixin constrained {
+	width: 100%;
+	max-width: $contentWidth;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 // @mixin wide-bleed {
 // 	$wideMargin: (($containerWidth - $contentWidth) / -2);
 // 	$fullMargin: calc((100vw - #{$contentWidth}) / -2);

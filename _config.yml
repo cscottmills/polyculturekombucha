@@ -18,3 +18,12 @@ kramdown:
 sass:
   sass_dir: resources/_scss
   style: :compressed
+
+# Defaults
+defaults:
+-
+  scope:
+    type: "posts"
+  values:
+    layout: "post"
+    category: "blog"

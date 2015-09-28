@@ -8,9 +8,8 @@
 	box-sizing: border-box;
 }
 
-// Set text selection background color
-// TODO set this once we have colors
-@include selection(transparentize($blue, 0.6));
+// TODO set this once colors are final
+@include selection(transparentize($blue, 0.8));
 
 // Global
 // --------------------------------------------------------
@@ -83,6 +82,7 @@ ol {
 
 hr {
 	border: 0;
+	margin: 0;
 }
 
 input,
@@ -113,9 +113,6 @@ a,
 	&:focus {
 		outline: 0;
 	}
-	// nav & {
-	// 	box-shadow: none;
-	// }
 }
 
 b,
