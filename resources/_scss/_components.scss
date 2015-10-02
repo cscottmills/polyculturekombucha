@@ -50,7 +50,7 @@
 	color: $grayLight;
 	background-color: $offWhite;
 	background-size: cover;
-	padding: ($verticalSpace * 2) 0 ($verticalSpace * 2);
+	padding: ($verticalSpace * 2) 0 $verticalSpace;
 	p {
 		text-align: center;
 	}
@@ -206,11 +206,11 @@
 	}
 	@include respond($huron) {
 		&.wide {
-			margin-right: calc((100vw - #{$contentWidth}) / -2);
-			margin-left: calc((100vw - #{$contentWidth}) / -2);
+			margin-right: calc(((100vw - #{$contentWidth}) / -2) + 1em);
+			margin-left: calc(((100vw - #{$contentWidth}) / -2) + 1em);
 			figcaption {
-				padding-right: calc((100vw - #{$contentWidth}) / 2);
-				padding-left: calc((100vw - #{$contentWidth}) / 2);
+				padding-right: calc(((100vw - #{$contentWidth}) / 2) - 1em);
+				padding-left: calc(((100vw - #{$contentWidth}) / 2) - 1em);
 			}
 		}
 	}
@@ -232,12 +232,20 @@
 	$space: 1em;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	.third {
 		width: calc(33.333% - ((#{$space} * 2) / 3));
+		min-width: 15.682em;
 		text-align: center;
 		& + .third {
 			margin-left: $space;
 		}
+	}
+	.half {
+		width: 100%;
+		max-width: 18.666em;
+		text-align: center;
+		margin: 0 ($space / 2);
 	}
 	.title {
 		@include beta;
@@ -287,5 +295,24 @@
 		padding: 0 ($space / 2);
 	}
 	// TODO flex & calc fallback
-	// TODO responsive styles
+	@include respond($victoria) {
+		.third {
+			width: 100%;
+			min-width: 0;
+			max-width: 18.666em;
+			margin: 0 ($space / 2);
+			& + .third {
+				margin-left: ($space / 2);
+			}
+		}
+	}
+	@include respond($baikal	) {
+		.half,
+		.third {
+			margin: 0;
+			& + .third {
+				margin-left: 0;
+			}
+		}
+	}
 }
