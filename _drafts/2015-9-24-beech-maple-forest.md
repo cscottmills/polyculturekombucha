@@ -3,6 +3,8 @@ title: The beech-maple forest
 author: Colaptes auratus
 ---
 
+Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+
 <figure class="content-figure wide">
   <img src="https://farm7.staticflickr.com/6021/5944828736_608ed9d575_b.jpg" alt="">
   <figcaption>

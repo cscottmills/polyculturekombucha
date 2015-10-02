@@ -9,7 +9,7 @@
 }
 
 // TODO set this once colors are final
-@include selection(transparentize($blue, 0.8));
+@include selection(transparentize($green, 0.8));
 
 // Global
 // --------------------------------------------------------
@@ -35,6 +35,10 @@ body {
 	font-weight: $regular;
 	line-height: $baseLineHeight;
 	color: $grayDark;
+	@include respond($erie) {
+		// 18px;
+		font-size: 1.125em;
+	}
 }
 
 // Typography
@@ -64,7 +68,7 @@ h4 {
 h5,
 h6 {
 	@extend %proto-heading;
-	font-size: $delta;
+	font-size: $epsilon;
 }
 
 p {

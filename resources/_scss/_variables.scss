@@ -31,8 +31,10 @@ $alpha: 1.364em;
 $beta: 1.182em;
 // 22px
 $gamma: 1em;
+// 18px
+$delta: 0.818em;
 // 16px
-$delta: 0.727em;
+$epsilon: 0.727em;
 
 $regular: 400;
 $medium: 600;
@@ -66,8 +68,8 @@ $huron: (($homeWidth + 2) / 1em) * 22px;
 $michigan: 900px;
 // 704px
 $baikal: (($contentWidth + 2) / 1em) * 22px;
-// $malawi: ;
-// $erie: ;
+$malawi: 640px;
+$erie: 500px;
 // $winnipeg: ;
 // $ontario: ;
 // $balkhash: ;

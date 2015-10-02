@@ -14,20 +14,20 @@
 	margin-left: auto;
 }
 
-// @mixin wide-bleed {
-// 	$wideMargin: (($containerWidth - $contentWidth) / -2);
-// 	$fullMargin: calc((100vw - #{$contentWidth}) / -2);
-// 	// This effectively sets the max-width to 60em and centers it in the viewport
-// 	margin-right: $wideMargin;
-// 	margin-left: $wideMargin;
-// 	@include respond($superior) {
-// 		// This effectively sets the width to 100vw
-// 		margin-right: $fullMargin;
-// 		margin-left: $fullMargin;
-// 	}
-// 	@include respond($michigan) {
-// 		margin-right: 0;
-// 		margin-left: 0;
-// 	}
-// 	// TODO calc & vw fallback
-// }
+// Flexbox
+// --------------------------------------------------------
+@mixin flex($property: "flex", $value: null) {
+	$prefixes: webkit ms;
+	@if $property == "flex" {
+		@each $p in $prefixes {
+			display: -#{$p}-flex;
+		}
+		display: flex;
+	}
+	@else {
+		@each $p in $prefixes {
+			-#{$p}-#{$property}: $value;
+		}
+		#{$property}: $value;
+	}
+}

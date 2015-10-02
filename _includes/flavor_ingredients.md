@@ -1,6 +1,6 @@
 <h2 class="post--title">About the tea</h2>
 
-We use our own mix of three lovely green teas from the Eastern Hemisphere:
+We use our own blend of three lovely green teas from the Eastern Hemisphere:
 
 **Makaibari Estate**  
 [Darjeeling][1]{:target="_blank"}, India  
