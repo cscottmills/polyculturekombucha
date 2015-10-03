@@ -112,8 +112,7 @@ a,
 		color: inherit;
 	}
 	&.active,
-	&:hover,
-	&:focus {
+	&:hover {
 		color: $blue;
 		box-shadow: 0 ($lineThickness * -1) 0 0 transparent inset;
 	}

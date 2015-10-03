@@ -141,13 +141,17 @@
 }
 
 .homepage-lead {
-	margin-bottom: ($verticalSpace * 2);
+	margin-bottom: ($verticalSpace * 2.25);
 	p {
 		width: 100%;
 		max-width: ($contentWidth / ($beta / 1em));
 		font-size: $beta;
+		line-height: $lessLineHeight;
 		text-align: center;
 		margin: 0 auto;
+		& + p {
+			margin-top: $verticalSpace;
+		}
 	}
 }
 

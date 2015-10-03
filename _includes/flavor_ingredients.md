@@ -1,4 +1,4 @@
-<h2 class="post--title">About the tea</h2>
+<h2 class="post--title">About our tea</h2>
 
 We use our own blend of three lovely green teas from the Eastern Hemisphere:
 

@@ -4,9 +4,9 @@ layout: default
 
 <main class="homepage-content">
 	<figure class="homepage-figure">
-		<img src="https://farm5.staticflickr.com/4008/5147959460_9a62b70296_o.png" alt="">
+		<img src="{{ site.imagePath }}/hero2.jpg" alt="">
 	</figure>
 	<div class="homepage-lead">
-		<p>Lake Michigan is the only one of the Great Lakes that is located entirely within the United States; the others form a water boundary between the United States and Canada.</p>
+		{% capture homepage_lead %}{% include homepage_lead.md %}{% endcapture %}{{ homepage_lead | markdownify }}
 	</div>
 </main>
