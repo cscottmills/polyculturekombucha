@@ -89,7 +89,7 @@ hr {
 	max-width: $figureWidth;
 	border: 0;
 	border-top: $lineThickness solid $blueLight;
-	margin: $verticalSpace auto ($verticalSpace * 2);
+	margin: ($verticalSpace * 2) auto;
 }
 
 input,

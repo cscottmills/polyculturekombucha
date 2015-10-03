@@ -4,9 +4,6 @@ variant: full
 title: Flavors
 ---
 
-<article class="post">
-	{% capture flavor_base %}{% include flavor_base.md %}{% endcapture %}{{ flavor_base | markdownify }}
-</article>
 <figure class="panels">
 	<div class="third">
 		{% capture flavor_ginger_lavender %}{% include flavor_ginger_lavender.md %}{% endcapture %}{{ flavor_ginger_lavender | markdownify }}
@@ -20,5 +17,5 @@ title: Flavors
 </figure>
 <hr>
 <article class="post green">
-	{% capture flavor_ingredients %}{% include flavor_ingredients.md %}{% endcapture %}{{ flavor_ingredients | markdownify }}
+	{% capture flavor_base %}{% include flavor_base.md %}{% endcapture %}{{ flavor_base | markdownify }}
 </article>

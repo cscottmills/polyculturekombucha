@@ -105,7 +105,7 @@
 .page-content {
 	@include constrained;
 	padding-top: ($verticalSpace * 2);
-	margin-bottom: ($verticalSpace * 2);
+	margin-bottom: ($verticalSpace * 3);
 	.full & {
 		max-width: 100%;
 	}
@@ -191,6 +191,9 @@
 	margin-bottom: 0.618em;
 	a {
 		box-shadow: none;
+	}
+	p + & {
+		padding-top: 0.618em;
 	}
 }
 
@@ -323,6 +326,10 @@
 	}
 	p {
 		padding: 0 ($space / 2);
+		margin-bottom: 0;
+		& + p {
+			margin-top: $verticalSpace;
+		}
 	}
 	.no-csscalc & {
 		margin: 0 ($space / -2);
