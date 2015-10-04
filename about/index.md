@@ -3,4 +3,6 @@ layout: interior
 title: About
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatibus voluptatum et velit quaerat praesentium inventore ipsa libero. Dolore ducimus sed atque a nisi minima voluptatibus deleniti ad sapiente ipsam.
+<h2 class="post--title">Small is beautiful</h2>
+
+At Polyculture, we think small is beautiful: small farms, small businesses, small batches. Small is not the same as miniature --- small is *concentrated*, and it plays the biggest role in strengthening our community.

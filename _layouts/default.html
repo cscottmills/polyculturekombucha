@@ -15,7 +15,7 @@
       <a class="logo" href="/"><img src="{{ site.imagePath }}/logo.png" alt="{{ site.title }}"></a>
       <nav class="primary-nav">
         <ul>
-          {% assign items = "about flavors buy blog" | split: ' ' %}{% capture branch %}{{ page.url }}{% endcapture %}{% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}
+          {% assign items = "about flavors buy blog contact" | split: ' ' %}{% capture branch %}{{ page.url }}{% endcapture %}{% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}
         </ul>
       </nav>
     </header>
@@ -24,7 +24,7 @@
       <p>This is our tagline</p>
       <nav class="footer-nav">
         <ul>
-          {% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}
+          {% assign footer_items = "about flavors buy blog contact" | split: ' ' %}{% capture branch %}{{ page.url }}{% endcapture %}{% for item in footer_items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}
         </ul>
       </nav>
       <p><img class="totem" src="{{ site.imagePath }}/leelanau.png" alt="Leelanau"></p>

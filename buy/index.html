@@ -4,17 +4,21 @@ variant: full
 title: Buy
 ---
 
+<aside class="placard">
+	<p>Already know the drill? <a href="/contact">Drop us a line</a> to put your name on some bottles.</p>
+</aside>
 <article class="post">
-	<h2 class="post--title">Something</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quae repudiandae velit non accusantium accusamus est deleniti impedit! Vero nemo quod beatae eveniet nobis! Pariatur odit saepe laborum facere repudiandae.</p>
+	{% capture buy_top %}{% include buy_top.md %}{% endcapture %}{{ buy_top | markdownify }}
 </article>
-<figure class="panels">
+<figure class="panels green">
 	<div class="half">
-		<h2 class="title gray"><b>Subscribe</b></h2>
-		<p>Fresh cold-pressed ginger juice joins with lavender flowers to make for an invigorating, spicy brew. Ginger soothes the stomach and lavender calms the mind.</p>
+		{% capture buy_subscribe %}{% include buy_subscribe.md %}{% endcapture %}{{ buy_subscribe | markdownify }}
 	</div>
 	<div class="half">
-		<h2 class="title gray-alt"><b>Order</b></h2>
-		<p>Honey is the summer sun captured, the land distilled &mdash; a sacred substance. In this brew, we use raw wildflower honey from Champion Hill Farm, who keeps hives year-round in fields and meadows all over Leelanau and Benzie Counties. The result is tart, effervescent, and floral.</p>
+		{% capture buy_order %}{% include buy_order.md %}{% endcapture %}{{ buy_order | markdownify }}
 	</div>
 </figure>
+<hr>
+<article class="post">
+	{% capture buy_bottom %}{% include buy_bottom.md %}{% endcapture %}{{ buy_bottom | markdownify }}
+</article>
