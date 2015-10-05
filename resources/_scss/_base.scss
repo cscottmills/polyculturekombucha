@@ -1,7 +1,6 @@
 // Base
 // ----
 
-// Apply a natural box layout model to everything
 *,
 *:before,
 *:after {
@@ -90,14 +89,17 @@ hr {
 	border: 0;
 	border-top: $lineThickness solid $blueLight;
 	margin: ($verticalSpace * 2) auto;
+	.panels + & {
+		margin-top: 0;
+	}
 }
 
 input,
 textarea,
 button {
-    &:focus {
-        outline: none;
-    }
+	&:focus {
+		outline: none;
+	}
 }
 
 // Inline elements
