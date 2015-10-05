@@ -21,7 +21,7 @@
     </header>
     {{ content }}
     <footer class="page-footer">
-      <p>This is our tagline</p>
+      <p>Good kombucha <br>from Leelanau County</p>
       <nav class="footer-nav">
         <ul>
           {% assign footer_items = "about flavors buy blog contact" | split: ' ' %}{% capture branch %}{{ page.url }}{% endcapture %}{% for item in footer_items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}

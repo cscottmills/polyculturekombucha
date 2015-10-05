@@ -67,6 +67,7 @@
 	color: $grayLight;
 	padding: ($verticalSpace * 2) 0 $verticalSpace;
 	p {
+		line-height: $lessLineHeight;
 		text-align: center;
 	}
 }
@@ -433,11 +434,13 @@ form {
 		width: 100%;
 		font-family: $fontBody;
 		background-color: transparentize($grayLighter, 0.7);
+		// background-color: $offWhite;
 		padding: 0 0.5em 0;
 		border: none;
 		transition: $duration background-color $timing;
 		&:focus {
 			background-color: transparentize($grayLighter, 0.8);
+			// background-color: transparentize($offWhite, 0.4);
 			outline: 0;
 		}
 	}
@@ -456,6 +459,7 @@ form {
 		display: inline-block;
 		vertical-align: top;
 		font-size: $delta;
+		font-weight: $medium;
 		font-family: $fontBody;
 		color: $grayDark;
 		background-color: transparent;
