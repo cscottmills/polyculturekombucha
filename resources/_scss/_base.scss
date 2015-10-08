@@ -92,6 +92,9 @@ hr {
 	.panels + & {
 		margin-top: 0;
 	}
+	@include respond($winnipeg) {
+		margin: $verticalSpace auto;
+	}
 }
 
 input,

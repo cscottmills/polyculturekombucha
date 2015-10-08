@@ -17,6 +17,9 @@
 // --------------------------
 .page-header {
 	padding: ($verticalSpace * 2) 0;
+	@include respond($winnipeg) {
+		padding: $verticalSpace 0;
+	}
 }
 
 // a
@@ -35,6 +38,9 @@
 		img {
 			image-rendering: auto;
 		}
+	}
+	@include respond($winnipeg) {
+		max-width: 12em;
 	}
 }
 
@@ -110,6 +116,10 @@
 	.full & {
 		max-width: 100%;
 	}
+	@include respond($winnipeg) {
+		padding-top: $verticalSpace;
+		margin-bottom: ($verticalSpace * 2);
+	}
 }
 
 // hr
@@ -139,6 +149,9 @@
 		display: block;
 		width: 100%;
 	}
+	@include respond($winnipeg) {
+		margin-bottom: $verticalSpace;
+	}
 }
 
 .homepage-lead {
@@ -153,6 +166,9 @@
 		& + p {
 			margin-top: $verticalSpace;
 		}
+	}
+	@include respond($winnipeg) {
+		margin-bottom: ($verticalSpace * 1.5);
 	}
 }
 
@@ -180,12 +196,15 @@
 	.full & {
 		@include constrained;
 	}
+	@include respond($winnipeg) {
+		margin-bottom: $verticalSpace;
+	}
 }
 
 .post--title {
 	@include beta;
-	line-height: 1;
-	margin-bottom: 0.618em;
+	line-height: $lessLineHeight;
+	margin-bottom: 0.462em;
 	a {
 		box-shadow: none;
 	}
@@ -388,6 +407,9 @@
 		p {
 			padding: 0;
 		}
+	}
+	@include respond($erie) {
+		margin-bottom: 0;
 	}
 }
 
