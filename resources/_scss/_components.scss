@@ -469,6 +469,7 @@ form {
 		font-size: $delta;
 		font-weight: $medium;
 		font-family: $fontBody;
+		line-height: $lessLineHeight;
 		color: $grayDark;
 		background-color: transparent;
 		padding: 0;
@@ -478,19 +479,6 @@ form {
 			color: $blue;
 			outline: none;
 		}
-	}
-	.response,
-	div.mce_inline_error {
-		font-weight: $medium;
-		color: $grayLight;
-	}
-	.response {
-		font-size: $epsilon;
-		margin-bottom: $verticalSpace;
-	}
-	div.mce_inline_error {
-		font-size: 0.889em;
-		padding-top: 0.2em;
 	}
 	.no-flexbox & {
 		.half {
@@ -511,5 +499,22 @@ form {
 		.half {
 			width: 100%;
 		}
+	}
+}
+
+// Style the MailChimp components
+#mc-embedded-subscribe-form {
+	.response,
+	.mce_inline_error {
+		font-weight: $medium;
+		color: $grayLight;
+	}
+	.response {
+		font-size: $epsilon;
+		margin-bottom: $verticalSpace;
+	}
+	.mce_inline_error {
+		font-size: 0.889em;
+		padding-top: 0.2em;
 	}
 }
