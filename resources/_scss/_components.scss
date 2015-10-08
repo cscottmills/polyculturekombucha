@@ -267,22 +267,17 @@
 	@include flex(flex-direction, row);
 	@include flex(flex-wrap, wrap);
 	text-align: center;
-	margin-bottom: $verticalSpace;
+	margin: 0 ($space / -2) $verticalSpace;
 	.third,
 	.half {
+		padding: 0 ($space / 2);
 		margin-bottom: $verticalSpace;
 	}
 	.third {
-		width: calc(33.333% - ((#{$space} * 2) / 3));
-		min-width: 15.682em;
-		& + .third {
-			margin-left: $space;
-		}
+		@include flex(flex-basis, 33.333%);
 	}
 	.half {
-		max-width: 18.666em;
-		margin-right: ($space / 2);
-		margin-left: ($space / 2);
+		@include flex(flex-basis, ($figureWidth + $space));
 	}
 	.title {
 		@include beta;
@@ -335,21 +330,16 @@
 			margin-top: $verticalSpace;
 		}
 	}
-	.no-csscalc & {
-		margin: 0 ($space / -2);
-		.third {
-			width: 33.333%;
-			padding: 0 ($space / 2);
-			& + .third {
-				margin-left: 0;
-			}
-		}
-	}
 	.no-flexbox & {
 		@include clearfix;
-		.half,
 		.third {
+			width: 33.333%;
 			float: left;
+		}
+		.half {
+			display: inline-block;
+			vertical-align: top;
+			max-width: ($figureWidth + $space);
 		}
 		.title {
 			padding: ($verticalSpace * 2) 0;
@@ -361,39 +351,36 @@
 	}
 	@include respond($victoria) {
 		.third {
-			width: 100%;
-			min-width: 0;
-			max-width: 18.666em;
-			margin-right: ($space / 2);
-			margin-left: ($space / 2);
-			& + .third {
-				margin-left: ($space / 2);
-			}
-		}
-		.no-csscalc & {
-			margin: 0;
-			.third {
-				width: 100%;
-				margin: 0;
-			}
+			@include flex(flex-basis, ($figureWidth + $space));
 		}
 		.no-flexbox & {
-			text-align: center;
-			.half,
 			.third {
 				display: inline-block;
 				vertical-align: top;
+				width: 100%;
+				max-width: ($figureWidth + $space);
 				float: none;
 			}
 		}
 	}
+	@include respond($tanganyika) {
+		.third,
+		.half {
+			@include flex(flex-basis, 50%);
+		}
+	}
 	@include respond($baikal) {
-		.half,
-		.third {
-			margin-right: 0;
-			margin-left: 0;
-			& + .third {
-				margin-left: 0;
+		margin-right: 0;
+		margin-left: 0;
+		.third,
+		.half {
+			@include flex(flex-basis, $figureWidth);
+			padding: 0;
+		}
+		.no-flexbox & {
+			.third,
+			.half {
+				max-width: $figureWidth;
 			}
 		}
 	}
@@ -434,13 +421,12 @@ form {
 		width: 100%;
 		font-family: $fontBody;
 		background-color: transparentize($grayLighter, 0.7);
-		// background-color: $offWhite;
 		padding: 0 0.5em 0;
-		border: none;
+		border: 0;
+		border-radius: 0;
 		transition: $duration background-color $timing;
 		&:focus {
 			background-color: transparentize($grayLighter, 0.8);
-			// background-color: transparentize($offWhite, 0.4);
 			outline: 0;
 		}
 	}
@@ -465,6 +451,7 @@ form {
 		background-color: transparent;
 		padding: 0;
 		border: 0;
+		border-radius: 0;
 		&:focus {
 			color: $blue;
 			outline: none;
