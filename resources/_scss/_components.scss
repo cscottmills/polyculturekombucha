@@ -264,6 +264,7 @@
 	@include strong-colors;
 	@include flex;
 	@include flex(justify-content, center);
+	@include flex(flex-direction, row);
 	@include flex(flex-wrap, wrap);
 	text-align: center;
 	margin-bottom: $verticalSpace;
@@ -279,7 +280,6 @@
 		}
 	}
 	.half {
-		width: 100%;
 		max-width: 18.666em;
 		margin-right: ($space / 2);
 		margin-left: ($space / 2);

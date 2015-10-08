@@ -24,9 +24,9 @@
 
 // Flexbox
 // --------------------------------------------------------
-@mixin flex($property: "flex", $value: null) {
+@mixin flex($property: "display", $value: null) {
 	$prefixes: webkit ms;
-	@if $property == "flex" {
+	@if $property == "display" {
 		@each $p in $prefixes {
 			display: -#{$p}-flex;
 		}
