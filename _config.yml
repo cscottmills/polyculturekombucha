@@ -1,9 +1,7 @@
 # Site settings
 title: Polyculture Kombucha
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  From the forests and fields of lovely Maple City comes Polyculture, Leelanau's very own brew!
 baseurl: ""
 url: "http://polyculturekombucha.com"
 timezone: America/Detroit
