@@ -26,21 +26,22 @@
 .logo {
 	display: block;
 	width: 100%;
-	max-width: 15em;
-	margin: 0 auto $verticalSpace;
+	max-width: 18em;
+	margin: 0 auto ($verticalSpace * 1.62);
 	box-shadow: none;
-	img {
+	object {
 		display: block;
 		width: 100%;
-		image-rendering: optimizeQuality;
+		pointer-events: none;
 	}
-	@include respond($erie) {
-		img {
-			image-rendering: auto;
-		}
+	.no-svg & {
+		height: 8em;
+		background: transparent url('../images/logo.png') no-repeat left top;
+		text-indent: -400em;
 	}
 	@include respond($winnipeg) {
-		max-width: 12em;
+		max-width: 14em;
+		margin-bottom: $verticalSpace;
 	}
 }
 
@@ -105,6 +106,11 @@
 	width: 1.875em;
 	padding-top: 0.4em;
 	opacity: $opacity;
+	.no-svg & {
+		height: 3.4em;
+		background: transparent url('../images/leelanau.png') no-repeat left bottom;
+		text-indent: -400em;
+	}
 }
 
 // Page content
@@ -442,6 +448,8 @@ form {
 		display: block;
 		width: 100%;
 		font-family: $fontBody;
+		// Fallback for browsers that don't support rgba (IE8)
+		background-color: $offWhite;
 		background-color: transparentize($grayLighter, 0.7);
 		padding: 0 0.5em 0;
 		border: 0;
@@ -455,6 +463,7 @@ form {
 	[type=text],
 	[type=email] {
 		height: $verticalSpace * 1.25;
+		line-height: $verticalSpace * 1.25;
 	}
 	textarea {
 		height: $verticalSpace * 5.25;
@@ -505,7 +514,7 @@ form {
 // Style the MailChimp components
 #mc-embedded-subscribe-form {
 	.response,
-	.mce_inline_error {
+	div.mce_inline_error {
 		font-weight: $medium;
 		color: $grayLight;
 	}
@@ -513,7 +522,7 @@ form {
 		font-size: $epsilon;
 		margin-bottom: $verticalSpace;
 	}
-	.mce_inline_error {
+	div.mce_inline_error {
 		font-size: 0.889em;
 		padding-top: 0.2em;
 	}

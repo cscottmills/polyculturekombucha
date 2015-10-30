@@ -12,9 +12,9 @@ $grayLight: #9e9b90;
 $gray: #7d7d79;
 $grayDark: #272522;
 
-$blue: #75b3c5;
-$orange: #f19d71;
-$green: #a2bb83;
+$blue: #76b9d6;
+$orange: #f9a46c;
+$green: #abc383;
 
 $blueLight: transparentize($blue, (1 - $opacity));
 $orangeLight: transparentize($orange, (1 - $opacity));
@@ -55,7 +55,7 @@ $verticalSpace: $baseLineHeight * 1em;
 
 $duration: 0.06s;
 $timing: ease;
-$shadowOpacity: 0.6;
+$shadowOpacity: 0.5;
 $shadowBlur: 0.2em;
 
 // Responsive breakpoints
