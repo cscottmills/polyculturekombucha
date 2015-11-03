@@ -4,8 +4,13 @@
 
 <h2 class="post--title" id="pickup">Pick-ups</h2>
 
-The next pick-up will be on **Saturday, November 7** from **10 &ndash; 2pm** in Traverse City. We're finalizing our permanent location right now, and will announce it as soon as it's official!
+Pick-ups take place every other Saturday from **10am &ndash; 2pm** at the Human Nature School headquarters in the Grand Traverse Commons:
 
-As always, you can [arrange](/contact) to pick up your kombucha directly from us anytime in Maple City. Let us know how we can make pick-ups work best for you.
+[**1200 West 11th St, Traverse City**](https://goo.gl/maps/6ydC7ef6PMr){:target="_blank"}  
+**Suite 112**
+
+The next pick-up will be on **Saturday, November 7**.
+
+As always, you can [arrange](/contact) to pick up your kombucha directly from us anytime in Maple City. Or, if you're on our route, we'll happily make a special delivery. Let us know how we can get you some kombucha!
 
 <!-- <h2 class="post--title">Our bottles</h2> -->

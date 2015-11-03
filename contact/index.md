@@ -37,3 +37,7 @@ Every once in a while we send out an email to share news from the brewery, event
   <input type="submit" value="Subscribe!" name="subscribe" id="mc-embedded-subscribe" class="button">
   </form>
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+---
+
+Also, [Instagram](http://instagram.com/polyculturekombucha){:target="_blank"} 
