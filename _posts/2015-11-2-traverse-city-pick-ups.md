@@ -7,8 +7,8 @@ Starting this Saturday we'll be holding tastings/pick-ups every other Saturday f
 
 **Saturday, November 7**  
 **10am &ndash; 2pm**  
-[**1200 West 11th St, Traverse City**](https://goo.gl/maps/6ydC7ef6PMr){:target="_blank"}  
-**Suite 112**
+[**1200 West 11th St, Traverse City**](https://goo.gl/maps/f1Jumvivh5B2){:target="_blank"}  
+**Suite 115**
 
 You can park in the cul-de-sac at the end of 11th, and you'll find us on the right just as you enter the building. The farmers market will be happening down the hall in the Mercado that morning as well!
 

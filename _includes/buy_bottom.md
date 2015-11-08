@@ -6,8 +6,8 @@
 
 Pick-ups take place every other Saturday from **10am &ndash; 2pm** at the Human Nature School headquarters in the Grand Traverse Commons:
 
-[**1200 West 11th St, Traverse City**](https://goo.gl/maps/6ydC7ef6PMr){:target="_blank"}  
-**Suite 112**
+[**1200 West 11th St, Traverse City**](https://goo.gl/maps/f1Jumvivh5B2){:target="_blank"}  
+**Suite 115**
 
 The next pick-up will be on **Saturday, November 7**.
 
