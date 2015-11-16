@@ -9,7 +9,7 @@ Pick-ups take place every other Saturday from **10am &ndash; 2pm** at the Human 
 [**1200 West 11th St, Traverse City**](https://goo.gl/maps/f1Jumvivh5B2){:target="_blank"}  
 **Suite 115**
 
-The next pick-up will be on **Saturday, November 7**.
+The next pick-up will be on **Saturday, November 21**.
 
 As always, you can [arrange](/contact) to pick up your kombucha directly from us anytime in Maple City. Or, if you're on our route, we'll happily make a special delivery. Let us know how we can get you some kombucha!
 
