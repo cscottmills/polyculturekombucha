@@ -2,15 +2,10 @@
 
 [Drop us a line](/contact) anytime to set up a subscription or place an order.
 
-<h2 class="post--title" id="pickup">Pick-ups</h2>
+<h2 class="post--title" id="deliveries">Deliveries</h2>
 
-Pick-ups take place every other Saturday from **10am &ndash; 2pm** at the Human Nature School headquarters in the Grand Traverse Commons:
+Deliveries happen every other Saturday. When you begin a subscription or place an order, we'll agree to deliver your kombucha to your home, place of business, or a convenient meeting place. We love getting to know the people who enjoy Polyculture, so delivering it to you is a privilege!
 
-[**1200 West 11th St, Traverse City**](https://goo.gl/maps/f1Jumvivh5B2){:target="_blank"}  
-**Suite 115**
+The next delivery will take place on **Saturday, November 21**.
 
-The next pick-up will be on **Saturday, November 21**.
-
-As always, you can [arrange](/contact) to pick up your kombucha directly from us anytime in Maple City. Or, if you're on our route, we'll happily make a special delivery. Let us know how we can get you some kombucha!
-
-<!-- <h2 class="post--title">Our bottles</h2> -->
+If Saturdays aren't good for you, we're happy to work with your schedule. And as always, you can [arrange](/contact) to pick up your bottles directly from us anytime in Maple City. Let us know how we can get you some kombucha!
