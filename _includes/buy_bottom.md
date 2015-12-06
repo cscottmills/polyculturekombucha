@@ -9,3 +9,4 @@ Deliveries happen every other Saturday. When you begin a subscription or place a
 The next delivery will take place on **Saturday, December 19**.
 
 If Saturdays aren't good for you, we're happy to work with your schedule. And as always, you can [arrange](/contact) to pick up your bottles directly from us anytime in Maple City. Let us know how we can get you some kombucha!
+
