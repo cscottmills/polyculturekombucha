@@ -7,7 +7,7 @@ url: "http://polyculturekombucha.com"
 timezone: America/Detroit
 
 # Build settings
-permalink: /:categories/:title
+permalink: /:categories/:title/
 imagePath: /resources/images
 exclude: [vendor, Gemfile, Gemfile.lock]
 markdown: kramdown
