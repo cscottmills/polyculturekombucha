@@ -1,3 +1,5 @@
-From the forests and fields of lovely Maple City comes Polyculture, Leelanau's very own brew! We offer three [flavors](/flavors) inspired by the landscape around us, and two ways to [buy](/buy) them inspired by our community.
+From the forests and fields of lovely Maple City comes Polyculture, Leelanau's very own brew!
 
-[Join us](/buy) as the story of Polyculture begins!
+Currently, we're hard at work laying the foundation so we can offer the best kombucha to our community. Polyculture will be available for sale starting this spring!
+
+If you have any questions, or just want to say hello, [get in touch](/contact)!

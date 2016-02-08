@@ -15,7 +15,7 @@
       <a class="logo" href="/"><object type="image/svg+xml" data="{{ site.imagePath }}/logo.svg">{{ site.title }}</object></a>
       <nav class="primary-nav">
         <ul>
-          {% assign items = "about flavors buy blog contact" | split: ' ' %}{% capture branch %}{{ page.url }}{% endcapture %}{% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}
+          {% assign items = "about flavors contact" | split: ' ' %}{% capture branch %}{{ page.url }}{% endcapture %}{% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}
         </ul>
       </nav>
     </header>

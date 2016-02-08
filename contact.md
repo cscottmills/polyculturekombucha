@@ -5,7 +5,7 @@ title: Contact
 
 <h2 class="post--title">Get in touch</h2>
 
-To place an order, start a subscription, or ask any questions you might have, write a note to Scott:  
+Write a note to Scott with any questions you might have:  
 [**scott@polyculturekombucha.com**](mailto:scott@polyculturekombucha.com)
 
 We look forward to hearing from you!
@@ -38,6 +38,3 @@ Every once in a while we send out an email to share news from the brewery, event
   </form>
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
----
-
-Also, [Instagram](http://instagram.com/polyculturekombucha){:target="_blank"} 
