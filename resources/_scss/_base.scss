@@ -7,7 +7,6 @@
 	box-sizing: border-box;
 }
 
-// TODO set this once colors are final
 @include selection(transparentize($green, 0.8));
 
 // Global

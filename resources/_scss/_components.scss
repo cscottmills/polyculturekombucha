@@ -1,14 +1,6 @@
 // Components
 // ----------
 
-// Temporary styles
-// --------------------------------------------------------
-.temporary {
-	.logo {
-		margin-bottom: 0;
-	}
-}
-
 // Global
 // --------------------------------------------------------
 .container {
@@ -42,11 +34,6 @@
 		width: 100%;
 		pointer-events: none;
 	}
-	.no-svg & {
-		height: 8em;
-		background: transparent url('../images/logo.png') no-repeat left top;
-		text-indent: -400em;
-	}
 	@include respond($winnipeg) {
 		max-width: 14em;
 		margin-bottom: $verticalSpace;
@@ -55,21 +42,12 @@
 
 .primary-nav {
 	ul {
-		@include flex;
-		@include flex(justify-content, center);
-		@include flex(flex-wrap, wrap);
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 	li {
 		margin: 0 ($verticalSpace / 2);
-	}
-	.no-flexbox & {
-		ul {
-			text-align: center;
-		}
-		li {
-			display: inline-block;
-			vertical-align: top;
-		}
 	}
 }
 
@@ -90,21 +68,12 @@
 .footer-nav {
 	margin-bottom: $verticalSpace;
 	ul {
-		@include flex;
-		@include flex(justify-content, center);
-		@include flex(flex-wrap, wrap);
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 	li {
 		margin: 0 ($verticalSpace / 2);
-	}
-	.no-flexbox & {
-		ul {
-			text-align: center;
-		}
-		li {
-			display: inline-block;
-			vertical-align: top;
-		}
 	}
 }
 
@@ -114,11 +83,6 @@
 	width: 1.875em;
 	padding-top: 0.4em;
 	opacity: $opacity;
-	.no-svg & {
-		height: 3.4em;
-		background: transparent url('../images/leelanau.png') no-repeat left bottom;
-		text-indent: -400em;
-	}
 }
 
 // Page content
@@ -202,9 +166,6 @@
 			position: absolute;
 			top: ($lineThickness / -2);
 			left: calc(50% - (#{$figureWidth} / 2));
-			.no-csscalc & {
-				width: 100%;
-			}
 		}
 	}
 	.full & {
@@ -295,10 +256,10 @@
 .panels {
 	$space: 1em;
 	@include strong-colors;
-	@include flex;
-	@include flex(justify-content, center);
-	@include flex(flex-direction, row);
-	@include flex(flex-wrap, wrap);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
 	text-align: center;
 	margin: 0 ($space / -2) $verticalSpace;
 	.third,
@@ -307,10 +268,10 @@
 		margin-bottom: $verticalSpace;
 	}
 	.third {
-		@include flex(flex-basis, 33.333%);
+		flex-basis: 33.333%;
 	}
 	.half {
-		@include flex(flex-basis, ($figureWidth + $space));
+		flex-basis: ($figureWidth + $space);
 	}
 	.title {
 		@include beta;
@@ -325,18 +286,22 @@
 		&.blue {
 			background-image: url('../images/blue.jpg');
 			text-shadow: 0 0 $shadowBlur transparentize($blue, $shadowOpacity);
+			@include selection(transparentize($blue, 0.8));
 		}
 		&.orange {
 			background-image: url('../images/orange.jpg');
 			text-shadow: 0 0 $shadowBlur transparentize($orange, $shadowOpacity);
+			@include selection(transparentize($orange, 0.8));
 		}
 		&.green {
 			background-image: url('../images/green.jpg');
 			text-shadow: 0 0 $shadowBlur transparentize($green, $shadowOpacity);
+			@include selection(transparentize($green, 0.8));
 		}
 		&.gray,
 		&.gray-alt {
 			text-shadow: 0 0 $shadowBlur transparentize($grayLighter, $shadowOpacity);
+			@include selection(transparentize($grayLighter, 0.8));
 		}
 		&.gray {
 			background-image: url('../images/grass.jpg');
@@ -346,9 +311,9 @@
 		}
 	}
 	b {
-		@include flex;
-		@include flex(align-items, center);
-		@include flex(justify-content, center);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		padding: 0 1em;
 		position: absolute;
 		top: 0;
@@ -363,43 +328,15 @@
 			margin-top: $verticalSpace;
 		}
 	}
-	.no-flexbox & {
-		@include clearfix;
-		.third {
-			width: 33.333%;
-			float: left;
-		}
-		.half {
-			display: inline-block;
-			vertical-align: top;
-			max-width: ($figureWidth + $space);
-		}
-		.title {
-			padding: ($verticalSpace * 2) 0;
-		}
-		b {
-			display: block;
-			position: static;
-		}
-	}
 	@include respond($victoria) {
 		.third {
-			@include flex(flex-basis, ($figureWidth + $space));
-		}
-		.no-flexbox & {
-			.third {
-				display: inline-block;
-				vertical-align: top;
-				width: 100%;
-				max-width: ($figureWidth + $space);
-				float: none;
-			}
+			flex-basis: ($figureWidth + $space);
 		}
 	}
 	@include respond($tanganyika) {
 		.third,
 		.half {
-			@include flex(flex-basis, 50%);
+			flex-basis: 50%;
 		}
 	}
 	@include respond($baikal) {
@@ -407,14 +344,8 @@
 		margin-left: 0;
 		.third,
 		.half {
-			@include flex(flex-basis, $figureWidth);
+			flex-basis: $figureWidth;
 			padding: 0;
-		}
-		.no-flexbox & {
-			.third,
-			.half {
-				max-width: $figureWidth;
-			}
 		}
 	}
 	@include respond($erie) {
@@ -430,9 +361,9 @@
 // Forms
 // --------------------------
 form {
-	@include flex;
-	@include flex(justify-content, space-between);
-	@include flex(flex-wrap, wrap);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	.input {
 		font-size: $delta;
 		margin-bottom: $verticalSpace;
@@ -495,20 +426,6 @@ form {
 		&:focus {
 			color: $blue;
 			outline: none;
-		}
-	}
-	.no-flexbox & {
-		.half {
-			width: 100%;
-		}
-	}
-	.no-csscalc & {
-		.half,
-		.whole {
-			padding-right: 1em;
-		}
-		.half {
-			width: 50%;
 		}
 	}
 	@include respond($winnipeg) {

@@ -21,21 +21,3 @@
 		}
 	}
 }
-
-// Flexbox
-// --------------------------------------------------------
-@mixin flex($property: "display", $value: null) {
-	$prefixes: webkit ms;
-	@if $property == "display" {
-		@each $p in $prefixes {
-			display: -#{$p}-flex;
-		}
-		display: flex;
-	}
-	@else {
-		@each $p in $prefixes {
-			-#{$p}-#{$property}: $value;
-		}
-		#{$property}: $value;
-	}
-}
