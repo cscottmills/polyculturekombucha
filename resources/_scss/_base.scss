@@ -91,6 +91,9 @@ hr {
 	.panels + & {
 		margin-top: 0;
 	}
+	.homepage-lead & {
+		max-width: 5em;
+	}
 	@include respond($winnipeg) {
 		margin: $verticalSpace auto;
 	}
