@@ -5,7 +5,7 @@ title: About
 
 <h2 class="post--title">Delight, reciprocity, vitality</h2>
 
-Polyculture is a small kombucha brewery in Maple City, Michigan, started by Kelly Kieft and Scott Mills. We bring years of experience observing nature, growing food, foraging, and cooking to our fermentation practice, and Polyculture is a culmination of it all. Behind each of our [brews](/flavors) is a deep reverence for the ingredients, their functions, their origins, and their flavors.
+Polyculture is a small kombucha brewery in Traverse City, Michigan, started by Kelly Kieft and Scott Mills. We bring years of experience observing nature, growing food, foraging, and cooking to our fermentation practice, and Polyculture is a culmination of it all. Behind each of our [brews](/flavors) is a deep reverence for the ingredients, their functions, their origins, and their flavors.
 
 We began brewing kombucha for ourselves in 2011 while living in Portland, Oregon, where we were owner-members of a small cooperative called Four Door Farm. During that time we began to learn about [permaculture][2]{:target="_blank"}, explore functional foods, and discover the magic of fermentation. When we returned to Northern Michigan in the spring of 2014, a single batch of kombucha rode with us eastward, safe in the back seat. Today, we brew every batch with the descendants of that well-traveled mother culture.
 

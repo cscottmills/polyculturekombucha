@@ -115,14 +115,14 @@
 // Homepage components
 // --------------------------
 .homepage-content {
-	width: 100%;
-	max-width: $homeWidth;
-	margin: 0 auto;	
+
 }
 
 // figure
 .homepage-figure {
-	margin-bottom: ($verticalSpace * 2);
+	width: 100%;
+	max-width: $homeWidth;
+	margin: 0 auto ($verticalSpace * 2);
 	img {
 		display: block;
 		width: 100%;
@@ -254,61 +254,91 @@
 // Panels
 // --------------------------
 .panels {
-	$space: 1em;
 	@include strong-colors;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	flex-direction: row;
 	text-align: center;
-	margin: 0 ($space / -2) $verticalSpace;
-	.third,
-	.half {
-		padding: 0 ($space / 2);
-		margin-bottom: $verticalSpace;
+	margin: 0 ($panelSpace / -2) $verticalSpace;
+	p {
+		padding: 0 ($panelSpace / 2);
+		margin-bottom: 0;
+		& + p {
+			margin-top: $verticalSpace;
+		}
 	}
-	.third {
-		flex-basis: 33.333%;
+	@include respond($baikal) {
+		margin-right: 0;
+		margin-left: 0;
 	}
-	.half {
-		flex-basis: ($figureWidth + $space);
+	@include respond($erie) {
+		margin-bottom: 0;
+		p {
+			padding: 0;
+		}
 	}
-	.title {
-		@include beta;
-		width: 100%;
-		color: $white;
-		line-height: $lessLineHeight;
-		background-position: 0 50%;
-		background-size: cover;
-		padding-bottom: 61.8%;
-		margin-bottom: 0.5em;
-		position: relative;
-		&.blue {
-			background-image: url('../images/blue.jpg');
-			text-shadow: 0 0 $shadowBlur transparentize($blue, $shadowOpacity);
-			@include selection(transparentize($blue, 0.8));
-		}
-		&.orange {
-			background-image: url('../images/orange.jpg');
-			text-shadow: 0 0 $shadowBlur transparentize($orange, $shadowOpacity);
-			@include selection(transparentize($orange, 0.8));
-		}
-		&.green {
-			background-image: url('../images/green.jpg');
-			text-shadow: 0 0 $shadowBlur transparentize($green, $shadowOpacity);
-			@include selection(transparentize($green, 0.8));
-		}
-		&.gray,
-		&.gray-alt {
-			text-shadow: 0 0 $shadowBlur transparentize($grayLighter, $shadowOpacity);
-			@include selection(transparentize($grayLighter, 0.8));
-		}
-		&.gray {
-			background-image: url('../images/grass.jpg');
-		}
-		&.gray-alt {
-			background-image: url('../images/goldenrod.jpg');
-		}
+}
+
+.panels--third,
+.panels--half {
+	padding: 0 ($panelSpace / 2);
+	margin-bottom: $verticalSpace;
+	@include respond($tanganyika) {
+		flex-basis: 50%;
+	}
+	@include respond($baikal) {
+		flex-basis: $figureWidth;
+		padding: 0;
+	}
+}
+
+.panels--third {
+	flex-basis: 33.333%;
+	@include respond($victoria) {
+		flex-basis: ($figureWidth + $panelSpace);
+	}
+}
+
+.panels--half {
+	flex-basis: ($figureWidth + $panelSpace);
+}
+
+.panels--title {
+	@include beta;
+	width: 100%;
+	color: $white;
+	line-height: $lessLineHeight;
+	background-position: 0 50%;
+	background-size: cover;
+	padding-bottom: 61.8%;
+	margin-bottom: 0.5em;
+	position: relative;
+	&.blue {
+		background-image: url('../images/blue.jpg');
+		text-shadow: 0 0 $shadowBlur transparentize($blue, $shadowOpacity);
+		@include selection(transparentize($blue, 0.8));
+	}
+	&.orange {
+		background-image: url('../images/orange.jpg');
+		text-shadow: 0 0 $shadowBlur transparentize($orange, $shadowOpacity);
+		@include selection(transparentize($orange, 0.8));
+	}
+	&.green {
+		background-image: url('../images/green.jpg');
+		text-shadow: 0 0 $shadowBlur transparentize($green, $shadowOpacity);
+		@include selection(transparentize($green, 0.8));
+	}
+	&.gray,
+	&.gray-alt {
+		text-shadow: 0 0 $shadowBlur transparentize($grayLighter, $shadowOpacity);
+		@include selection(transparentize($grayLighter, 0.8));
+	}
+	&.gray {
+		background-image: url('../images/grass.jpg');
+	}
+	&.gray-alt {
+		background-image: url('../images/goldenrod.jpg');
 	}
 	b {
 		display: flex;
@@ -320,41 +350,6 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-	}
-	p {
-		padding: 0 ($space / 2);
-		margin-bottom: 0;
-		& + p {
-			margin-top: $verticalSpace;
-		}
-	}
-	@include respond($victoria) {
-		.third {
-			flex-basis: ($figureWidth + $space);
-		}
-	}
-	@include respond($tanganyika) {
-		.third,
-		.half {
-			flex-basis: 50%;
-		}
-	}
-	@include respond($baikal) {
-		margin-right: 0;
-		margin-left: 0;
-		.third,
-		.half {
-			flex-basis: $figureWidth;
-			padding: 0;
-		}
-	}
-	@include respond($erie) {
-		p {
-			padding: 0;
-		}
-	}
-	@include respond($erie) {
-		margin-bottom: 0;
 	}
 }
 

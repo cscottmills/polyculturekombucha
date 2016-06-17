@@ -36,6 +36,24 @@
 	background-color: $color;
 }
 
+// Grid item
+// --------------------------
+@mixin grid-item($count, $space, $wrap: false) {
+  $count-1: ($count - 1);
+  width: calc((100% / #{$count}) - (#{$space} / #{$count}) * #{$count-1});
+  @if $wrap != false {
+    &:nth-child(#{$count}n+1):nth-last-child(-n+#{$count-1}) ~ & {
+      margin-left: $space;
+    }
+    @for $i from 1 through ($count - 2) {
+      $index: ($count - $i);
+      &:nth-child(#{$count}n+#{$index}):last-child {
+        margin-right: auto;
+      }
+    }    
+  }
+}
+
 // Clearfix
 // $mode accepts 'light' or 'heavy'
 // 'light' is sufficient for clearing floats, while 'heavy' is required to prevent margin collapsing
@@ -103,56 +121,6 @@
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;	
-}
-
-// Hyphenation
-// NB this doesn't work in Chrome
-// --------------------------
-@mixin hyphenate {
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	hyphens: auto;
-}
-
-// Keyframes
-// --------------------------
-@mixin keyframes($name) {
-	@-webkit-keyframes $name {
-		@content;
-	}
-	@-moz-keyframes $name {
-		@content;
-	}
-	@-ms-keyframes $name {
-		@content;
-	}
-	@-o-keyframes $name {
-		@content;
-	}
-	@keyframes $name {
-		@content;
-	}
-}
-
-// Animation
-// --------------------------
-@mixin animation($properties) {
-	-webkit-animation: $properties;
-	-moz-animation: $properties;
-	-ms-animation: $properties;
-	-o-animation: $properties;
-	animation: $properties;
-}
-
-// Appearance
-// Possible values listed here:
-// http://css-tricks.com/almanac/properties/a/appearance/
-// Usually has to override styles in _normalize.scss, hence !important
-// --------------------------
-@mixin appearance($value) {
-	-webkit-appearance: $value !important;
-	-moz-appearance: $value !important;
-	appearance: $value !important;
 }
 
 // Selection background

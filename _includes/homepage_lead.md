@@ -1,7 +1,7 @@
-From the forests and fields of lovely Maple City comes Polyculture, Leelanau's very own brew!
+Polyculture Kombucha is an expression of the delight, reciprocity and vitality shared by the people and land surrounding us -- a fitting brew for the vibrant community in and around Traverse City. [Read our story](/about).
 
 ---
 
-Currently, we're hard at work laying the foundation to share the best kombucha with our community. Polyculture will be available for sale starting this summer!
+Currently, we're hard at work laying the foundation to share the best [kombucha](/flavors) with all of you. Polyculture will be available for sale starting this summer!
 
 If you have any questions, or just want to say hello, [get in touch](/contact)!

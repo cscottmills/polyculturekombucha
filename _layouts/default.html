@@ -25,7 +25,7 @@
           {% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}
         </ul>
       </nav>
-      <p>&copy;{{ 'now' | date: "%Y" }} Polyculture, LLC</p>
+      <p>&copy; {{ 'now' | date: "%Y" }} Polyculture, LLC</p>
       <p><object class="totem" type="image/svg+xml" data="{{ site.imagePath }}/leelanau.svg">Leelanau</object></p>
     </footer>
   </div>
