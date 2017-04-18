@@ -4,7 +4,7 @@ We start each batch with four solid ingredients: Maple City well water, a blend 
 
 <h2 class="post--title">About our tea</h2>
 
-We use our own blend of three lovely green teas from the Eastern Hemisphere:
+We brew with two lovely green teas from the Eastern Hemisphere:
 
 **Makaibari Estate**  
 [Darjeeling][2]{:target="_blank"}, India  
@@ -14,10 +14,5 @@ Organic, fair trade, biodynamically farmed
 [Uva Province][3]{:target="_blank"}, Sri Lanka  
 Organic, fair trade, biodynamically farmed
 
-**Sencha**  
-[Kagoshima Prefecture][4]{:target="_blank"}, Japan  
-Organic
-
 [2]: https://goo.gl/maps/37FJnGAZahK2
 [3]: https://goo.gl/maps/Lq6uBYFs55n
-[4]: https://goo.gl/maps/gJWVAephJ932
