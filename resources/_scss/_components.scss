@@ -329,6 +329,11 @@
 		text-shadow: 0 0 $shadowBlur transparentize($green, $shadowOpacity);
 		@include selection(transparentize($green, 0.8));
 	}
+	&.purple {
+		background-image: url('../images/purple.jpg');
+		text-shadow: 0 0 $shadowBlur transparentize($purple, $shadowOpacity);
+		@include selection(transparentize($purple, 0.8));
+	}
 	&.gray,
 	&.gray-alt {
 		text-shadow: 0 0 $shadowBlur transparentize($grayLighter, $shadowOpacity);
