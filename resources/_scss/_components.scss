@@ -8,6 +8,7 @@
 	max-width: $containerWidth;
 	padding: 0 1em;
 	margin: 0 auto;
+
 	@include respond($malawi) {
 		padding: 0 0.5em;
 	}
@@ -17,6 +18,7 @@
 // --------------------------
 .page-header {
 	padding: ($verticalSpace * 2) 0;
+
 	@include respond($winnipeg) {
 		padding: $verticalSpace 0;
 	}
@@ -29,11 +31,13 @@
 	max-width: 18em;
 	margin: 0 auto ($verticalSpace * 1.62);
 	box-shadow: none;
-	object {
+
+	svg {
 		display: block;
 		width: 100%;
-		pointer-events: none;
+		fill: $blue;
 	}
+
 	@include respond($winnipeg) {
 		max-width: 14em;
 		margin-bottom: $verticalSpace;
@@ -46,6 +50,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+
 	li {
 		margin: 0 ($verticalSpace / 2);
 	}
@@ -59,6 +64,7 @@
 	font-weight: $medium;
 	color: $grayLight;
 	padding: ($verticalSpace * 2) 0 $verticalSpace;
+
 	p {
 		line-height: $lessLineHeight;
 		text-align: center;
@@ -67,22 +73,27 @@
 
 .footer-nav {
 	margin-bottom: $verticalSpace;
+
 	ul {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+
 	li {
 		margin: 0 ($verticalSpace / 2);
 	}
 }
 
 .totem {
-	display: inline-block;
-	vertical-align: top;
-	width: 1.875em;
-	padding-top: 0.4em;
-	opacity: $opacity;
+	svg {
+		display: inline-block;
+		vertical-align: top;
+		width: 1.875em;
+		fill: $blue;
+		padding-top: 0.4em;
+		opacity: $opacity;
+	}
 }
 
 // Page content
@@ -91,9 +102,11 @@
 	@include constrained;
 	padding-top: ($verticalSpace * 2);
 	margin-bottom: ($verticalSpace * 3);
+
 	.full & {
 		max-width: 100%;
 	}
+
 	@include respond($winnipeg) {
 		padding-top: $verticalSpace;
 		margin-bottom: ($verticalSpace * 2);
@@ -114,19 +127,21 @@
 // --------------------------------------------------------
 // Homepage components
 // --------------------------
-.homepage-content {
+// .homepage-content {
 
-}
+// }
 
 // figure
 .homepage-figure {
 	width: 100%;
 	max-width: $homeWidth;
 	margin: 0 auto ($verticalSpace * 2);
+
 	img {
 		display: block;
 		width: 100%;
 	}
+
 	@include respond($winnipeg) {
 		margin-bottom: $verticalSpace;
 	}
@@ -134,6 +149,7 @@
 
 .homepage-lead {
 	margin-bottom: ($verticalSpace * 2.25);
+
 	p {
 		width: 100%;
 		max-width: ($contentWidth / ($beta / 1em));
@@ -141,10 +157,12 @@
 		line-height: $lessLineHeight;
 		text-align: center;
 		margin: 0 auto;
+
 		& + p {
 			margin-top: $verticalSpace;
 		}
 	}
+
 	@include respond($winnipeg) {
 		margin-bottom: ($verticalSpace * 1.5);
 	}
@@ -155,9 +173,11 @@
 .post {
 	@include strong-colors;
 	margin-bottom: ($verticalSpace * 2);	
+
 	& + & {
 		padding-top: ($verticalSpace * 2);
 		position: relative;
+
 		&:before {
 			content: "";
 			display: block;
@@ -168,9 +188,11 @@
 			left: calc(50% - (#{$figureWidth} / 2));
 		}
 	}
+
 	.full & {
 		@include constrained;
 	}
+
 	@include respond($winnipeg) {
 		margin-bottom: $verticalSpace;
 	}
@@ -180,9 +202,11 @@
 	@include beta;
 	line-height: $lessLineHeight;
 	margin-bottom: 0.462em;
+
 	a {
 		box-shadow: none;
 	}
+
 	p + & {
 		padding-top: 0.618em;
 	}
@@ -201,27 +225,33 @@
 .content-figure {
 	$overhang: (($contentWidth - $figureWidth) / 2);
 	margin: $verticalSpace 0;
+
 	&.wide {
 		width: auto;
 		margin-right: -$overhang;
 		margin-left: -$overhang;
+
 		figcaption {
 			padding-right: $overhang;
 			padding-left: $overhang;
 		}
 	}
+
 	&.narrow {
 		width: 100%;
 		max-width: $figureWidth;
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	img {
 		display: block;
 		width: 100%;
 	}
+
 	figcaption {
 		padding-top: 0.4em;
+
 		p {
 			font-size: $epsilon;
 			font-weight: $medium;
@@ -229,20 +259,24 @@
 			line-height: $lessLineHeight;
 		}
 	}
+
 	@include respond($huron) {
 		&.wide {
 			margin-right: calc(((100vw - #{$contentWidth}) / -2) + 1em);
 			margin-left: calc(((100vw - #{$contentWidth}) / -2) + 1em);
+
 			figcaption {
 				padding-right: calc(((100vw - #{$contentWidth}) / 2) - 1em);
 				padding-left: calc(((100vw - #{$contentWidth}) / 2) - 1em);
 			}
 		}
 	}
+
 	@include respond($baikal) {
 		&.wide {
 			margin-right: 0;
 			margin-left: 0;
+
 			figcaption {
 				padding-right: 0;
 				padding-left: 0;
@@ -261,17 +295,21 @@
 	flex-direction: row;
 	text-align: center;
 	margin: 0 ($panelSpace / -2) $verticalSpace;
+
 	p {
 		padding: 0 ($panelSpace / 2);
 		margin-bottom: 0;
+
 		& + p {
 			margin-top: $verticalSpace;
 		}
 	}
+
 	@include respond($baikal) {
 		margin-right: 0;
 		margin-left: 0;
 	}
+
 	@include respond($erie) {
 		margin-bottom: 0;
 		p {
@@ -284,9 +322,11 @@
 .panels--half {
 	padding: 0 ($panelSpace / 2);
 	margin-bottom: $verticalSpace;
+
 	@include respond($tanganyika) {
 		flex-basis: 50%;
 	}
+
 	@include respond($baikal) {
 		flex-basis: $figureWidth;
 		padding: 0;
@@ -295,6 +335,7 @@
 
 .panels--third {
 	flex-basis: 33.333%;
+
 	@include respond($victoria) {
 		flex-basis: ($figureWidth + $panelSpace);
 	}
@@ -309,42 +350,28 @@
 	width: 100%;
 	color: $white;
 	line-height: $lessLineHeight;
-	background-position: 0 50%;
-	background-size: cover;
+	background-position: 50% 50%;
 	padding-bottom: 61.8%;
 	margin-bottom: 0.5em;
 	position: relative;
+
 	&.blue {
 		background-image: url('../images/blue.jpg');
-		text-shadow: 0 0 $shadowBlur transparentize($blue, $shadowOpacity);
 		@include selection(transparentize($blue, 0.8));
 	}
+
 	&.orange {
 		background-image: url('../images/orange.jpg');
-		text-shadow: 0 0 $shadowBlur transparentize($orange, $shadowOpacity);
-		@include selection(transparentize($orange, 0.8));
 	}
+
 	&.green {
 		background-image: url('../images/green.jpg');
-		text-shadow: 0 0 $shadowBlur transparentize($green, $shadowOpacity);
-		@include selection(transparentize($green, 0.8));
 	}
+
 	&.purple {
 		background-image: url('../images/purple.jpg');
-		text-shadow: 0 0 $shadowBlur transparentize($purple, $shadowOpacity);
-		@include selection(transparentize($purple, 0.8));
 	}
-	&.gray,
-	&.gray-alt {
-		text-shadow: 0 0 $shadowBlur transparentize($grayLighter, $shadowOpacity);
-		@include selection(transparentize($grayLighter, 0.8));
-	}
-	&.gray {
-		background-image: url('../images/grass.jpg');
-	}
-	&.gray-alt {
-		background-image: url('../images/goldenrod.jpg');
-	}
+
 	b {
 		display: flex;
 		align-items: center;
@@ -364,6 +391,7 @@ form {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+
 	.input {
 		font-size: $delta;
 		margin-bottom: $verticalSpace;
@@ -371,16 +399,20 @@ form {
 			margin-bottom: 0;
 		}
 	}
+
 	.half {
 		width: calc(50% - 0.5em);
 	}
+
 	.whole {
 		width: 100%;
 	}
+
 	label {
 		display: block;
 		margin-bottom: 0.1em;
 	}
+
 	[type=text],
 	[type=email],
 	textarea {
@@ -394,16 +426,19 @@ form {
 		border: 0;
 		border-radius: 0;
 		transition: $duration background-color $timing;
+
 		&:focus {
 			background-color: transparentize($grayLighter, 0.8);
 			outline: 0;
 		}
 	}
+
 	[type=text],
 	[type=email] {
 		height: $verticalSpace * 1.25;
 		line-height: $verticalSpace * 1.25;
 	}
+
 	textarea {
 		height: $verticalSpace * 5.25;
 		line-height: $baseLineHeight;
@@ -411,6 +446,7 @@ form {
 		padding-bottom: 0.175em;
 		resize: none;
 	}
+
 	[type=submit] {
 		display: inline-block;
 		vertical-align: top;
@@ -423,11 +459,13 @@ form {
 		padding: 0;
 		border: 0;
 		border-radius: 0;
+
 		&:focus {
 			color: $blue;
 			outline: none;
 		}
 	}
+
 	@include respond($winnipeg) {
 		display: block;
 		.half {
@@ -443,10 +481,12 @@ form {
 		font-weight: $medium;
 		color: $grayLight;
 	}
+
 	.response {
 		font-size: $epsilon;
 		margin-bottom: $verticalSpace;
 	}
+
 	div.mce_inline_error {
 		font-size: 0.889em;
 		padding-top: 0.2em;

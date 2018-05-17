@@ -14,7 +14,7 @@ We look forward to hearing from you!
 
 <h2 class="post--title">Stay in the loop</h2>
 
-Every once in a while we send out an email to share news from the brewery, event announcements, local gossip, etc. Fill out the form below to get in on it.
+Every so often we send out an email to share news from the brewery, reflections on the season, local gossip, etc. Fill out the form below to get in on it.
 
 <form action="//cscottmills.us9.list-manage.com/subscribe/post?u=ff95ad2984abb018b175d92f4&amp;id=28a6e7c240" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
   <div class="mc-field-group input half">
