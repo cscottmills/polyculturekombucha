@@ -23,6 +23,7 @@
       <nav class="footer-nav">
         <ul>
           {% for item in items %}<li><a {% if branch contains item %}class="active"{% endif %} href="/{{ item }}">{{ item | capitalize }}</a></li>{% endfor %}
+          <li><a href="https://www.instagram.com/polyculturekombucha/" target="_blank">Instagram</a></li>
         </ul>
       </nav>
       <p>&copy; {{ 'now' | date: "%Y" }} Polyculture, LLC</p>
