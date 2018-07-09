@@ -90,7 +90,7 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 1.875em;
-		fill: $blue;
+		fill: $grayLighter;
 		padding-top: 0.4em;
 		opacity: $opacity;
 	}
@@ -356,20 +356,19 @@
 	position: relative;
 
 	&.blue {
-		background-image: url('../images/blue.jpg');
-		@include selection(transparentize($blue, 0.8));
+		background-image: linear-gradient(-75deg, $blue 50%, transparentize($blue, 0.2));
 	}
 
 	&.orange {
-		background-image: url('../images/orange.jpg');
+		background-image: linear-gradient(-75deg, $orange 50%, transparentize($orange, 0.2));
 	}
 
 	&.green {
-		background-image: url('../images/green.jpg');
+		background-image: linear-gradient(-75deg, $green 50%, transparentize($green, 0.2));
 	}
 
 	&.purple {
-		background-image: url('../images/purple.jpg');
+		background-image: linear-gradient(-75deg, $purple 50%, transparentize($purple, 0.2));
 	}
 
 	b {
@@ -391,21 +390,17 @@ form {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	width: 100%;
+	max-width: ($figureWidth - 2em);
+	margin: 0 auto;
 
 	.input {
+		width: 100%;
 		font-size: $delta;
 		margin-bottom: $verticalSpace;
 		&:last-child {
 			margin-bottom: 0;
 		}
-	}
-
-	.half {
-		width: calc(50% - 0.5em);
-	}
-
-	.whole {
-		width: 100%;
 	}
 
 	label {
@@ -419,8 +414,6 @@ form {
 		display: block;
 		width: 100%;
 		font-family: $fontBody;
-		// Fallback for browsers that don't support rgba (IE8)
-		background-color: $offWhite;
 		background-color: transparentize($grayLighter, 0.7);
 		padding: 0 0.5em 0;
 		border: 0;
@@ -439,13 +432,13 @@ form {
 		line-height: $verticalSpace * 1.25;
 	}
 
-	textarea {
-		height: $verticalSpace * 5.25;
-		line-height: $baseLineHeight;
-		padding-top: 0.175em;
-		padding-bottom: 0.175em;
-		resize: none;
-	}
+	// textarea {
+	// 	height: $verticalSpace * 5.25;
+	// 	line-height: $baseLineHeight;
+	// 	padding-top: 0.175em;
+	// 	padding-bottom: 0.175em;
+	// 	resize: none;
+	// }
 
 	[type=submit] {
 		display: inline-block;
@@ -468,9 +461,6 @@ form {
 
 	@include respond($winnipeg) {
 		display: block;
-		.half {
-			width: 100%;
-		}
 	}
 }
 
@@ -491,4 +481,8 @@ form {
 		font-size: 0.889em;
 		padding-top: 0.2em;
 	}
+}
+
+#mce-responses {
+	width: 100%;
 }

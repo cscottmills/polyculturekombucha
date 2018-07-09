@@ -26,7 +26,6 @@ html {
 }
 
 body {
-	min-width: 320px;
 	font-family: $fontBody;
 	// 22px
 	font-size: 1.375em;
@@ -86,7 +85,7 @@ hr {
 	width: 100%;
 	max-width: $figureWidth;
 	border: 0;
-	border-top: $lineThickness solid $blueLight;
+	border-top: $lineThickness solid $greenLight;
 	margin: ($verticalSpace * 2) auto;
 	.panels + & {
 		margin-top: 0;
@@ -115,16 +114,13 @@ a,
 	text-decoration: none;
 	transition: $duration color ease-out, $duration box-shadow ease-out; 
 	box-shadow: 0 ($lineThickness * -1) 0 0 $blueLight inset;
-	&:visited {   
-		color: inherit;
-	}
 	&.active,
 	&:hover {
 		color: $blue;
 		box-shadow: 0 ($lineThickness * -1) 0 0 transparent inset;
 	}
 	&:focus {
-		outline: 0;
+		outline-color: $blue;
 	}
 }
 

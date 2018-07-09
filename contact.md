@@ -5,8 +5,8 @@ title: Contact
 
 <h2 class="post--title">Get in touch</h2>
 
-Write a note to Scott with any questions you might have:  
-[**scott@polyculturekombucha.com**](mailto:scott@polyculturekombucha.com)
+Write a note to Kelly with any questions you might have:  
+[**kelly@polyculturekombucha.com**](mailto:kelly@polyculturekombucha.com)
 
 We look forward to hearing from you!
 
@@ -16,20 +16,16 @@ We look forward to hearing from you!
 
 Every so often we send out an email to share news from the brewery, reflections on the season, local gossip, etc. Fill out the form below to get in on it.
 
-<form action="//cscottmills.us9.list-manage.com/subscribe/post?u=ff95ad2984abb018b175d92f4&amp;id=28a6e7c240" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  <div class="mc-field-group input half">
-    <label for="mce-FNAME">First name</label>
-    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+<form action="https://polyculturekombucha.us9.list-manage.com/subscribe/post?u=ff95ad2984abb018b175d92f4&amp;id=28a6e7c240" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  <div class="mc-field-group input">
+    <label for="mce-NAME">Name</label>
+    <input type="text" value="" name="NAME" id="mce-NAME">
   </div>
-  <div class="mc-field-group input half">
-    <label for="mce-LNAME">Last name</label>
-    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-  </div>
-  <div class="mc-field-group input whole">
+  <div class="mc-field-group input">
     <label for="mce-EMAIL">Email address</label>
-    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    <input type="email" value="" name="EMAIL" class="required" id="mce-EMAIL">
   </div>
-  <div id="mce-responses" class="clear">
+  <div id="mce-responses">
     <div class="response" id="mce-error-response" style="display:none"></div>
     <div class="response" id="mce-success-response" style="display:none"></div>
   </div>
