@@ -85,7 +85,7 @@ hr {
 	width: 100%;
 	max-width: $figureWidth;
 	border: 0;
-	border-top: $lineThickness solid $greenLight;
+	border-top: $lineThickness solid $blueLight;
 	margin: ($verticalSpace * 2) auto;
 	.panels + & {
 		margin-top: 0;
