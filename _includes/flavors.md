@@ -1,6 +1,6 @@
 <h2 class="post--title">How we brew</h2>
 
-We start each batch with four solid ingredients: spring water, a blend of organic green tea leaves from Arbor Teas, organic cane sugar from Florida Crystals, and one of our cherished SCOBYs. After a full fourteen days of fermentation in a glass vessel, we infuse each batch with organic or wild-harvested herbs, fruits, and such. Fourteen more days fermenting in the bottle, and we have a crisp, delightfully fizzy kombucha, alive and ready to share!
+We start each batch with four solid ingredients: spring water, a blend of organic green tea leaves from Arbor Teas, organic cane sugar from Florida Crystals, and one of our cherished SCOBYs. After a full fourteen days of fermentation in a glass vessel, we infuse each batch with organic or wild-harvested herbs, fruits, and such. After a few more weeks fermenting in the bottle, we have a crisp, delightfully fizzy kombucha, alive and ready to share!
 
 <h2 class="post--title">About our tea</h2>
 

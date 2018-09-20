@@ -2,6 +2,6 @@ Polyculture Kombucha is an expression of the delight, reciprocity and vitality s
 
 ---
 
-You can now find our bottles for sale at Oryana!
+You can now find our bottles for sale at [a few places](/buy) in Traverse City!
 
 If you have any questions, or just want to say hello, [get in touch](/contact).

@@ -1,6 +1,10 @@
 <h2 class="post--title">On the shelves</h2>
 
-You can find our bottles for sale at [Oryana Community Co-op](https://osm.org/go/ZV9Gt7WS?m=){:target="_blank"} in Traverse City. It's housed in the cider cooler next to the beer.
+You can find our bottles for sale at [Oryana Community Co-op](https://osm.org/go/ZV9Gt7dAh-?m=){:target="_blank"} in Traverse City. They're housed in the cider cooler next to the beer.
+
+You'll also find us at these fine locally-owned businesses:  
+[Burritt's Fresh Markets](https://osm.org/go/ZV9Gy3W84-?m=){:target="_blank"}  
+[Nada's Gourmet Deli](https://osm.org/go/ZV9GzgSGw-?m=){:target="_blank"}
 
 <h2 class="post--title">From the source</h2>
 

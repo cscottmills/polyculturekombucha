@@ -371,6 +371,10 @@
 		background-image: linear-gradient(-75deg, $purple 50%, transparentize($purple, 0.2));
 	}
 
+	&.red {
+		background-image: linear-gradient(-75deg, $red 50%, transparentize($red, 0.2));
+	}
+
 	b {
 		display: flex;
 		align-items: center;
